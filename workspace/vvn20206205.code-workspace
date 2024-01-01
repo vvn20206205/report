@@ -1,17 +1,17 @@
 {
 "folders": [
-    {
-        "path": ".."
-    },
-    {
-        "path": "../baocao"
-    },
-    {
-        "path": "../baocao/pictures"
-    },
-    {
-        "path": "../baocao/contents/_doan"
-    }
+{
+"path": ".."
+},
+{
+"path": "../baocao"
+},
+{
+"path": "../baocao/pictures"
+},
+{
+"path": "../baocao/contents/_doan"
+}
 ],
 "settings": {
 "code-runner.executorMap": {
