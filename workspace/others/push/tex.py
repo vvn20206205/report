@@ -24,9 +24,9 @@ while "  " in input:
 # print(input)
 output = Convert.VarSnakeCase(input)
 #####################
-chapter="p1_"
-chapter="p2_"
-chapter="p3_"
+chapter="msa_"
+chapter="hddt_"
+chapter="ddd_"
 chapter="p4_"
 chapter="p5_"
 chapter="p0_"
