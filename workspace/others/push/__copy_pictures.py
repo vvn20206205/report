@@ -11,11 +11,15 @@ if match:
 else:
     print("No match found.")
 print(input)
+
+input = input.replace("%", "")
 input = input.replace("(", "")
 input = input.replace(")", "")
+input = input.replace("{", "")
+input = input.replace("}", "")
 input = input.replace("/", "")
 input = input.replace("-", "")
-input = input.replace("%", "")
+input = input.replace("_", " ")
 while "  " in input:
     input = input.replace("  ", " ")
 print(input)
@@ -25,3 +29,5 @@ pictures="../../../baocao/pictures"
 nguon =   os.path.join(pictures, "_")
 dich = os.path.join(pictures, "_"+output)
 shutil.copytree(nguon, dich)
+import subprocess
+subprocess.run(" python __list_pictures.py",shell=True)
