@@ -8,10 +8,10 @@ def TimKiem(root_dir, ext):
 
 
 folder = os.path.join(os.getcwd(), r"..\\..\\..\\")
-files = TimKiem(folder, '.srt')
-files = TimKiem(folder, '.tex')
 files = TimKiem(folder, '.md')
 files = TimKiem(folder, '.py')
+files = TimKiem(folder, '.srt')
+files = TimKiem(folder, '.tex')
 for f in files:
     print(f)
 

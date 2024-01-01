@@ -16,8 +16,7 @@
 "markdown": " clear && cd $dir && if [ $fileName = README.md ]; then ( cd ../../workspace/others/push && python push.py ); else ( echo NO README.md ); fi;",
 "latex": " clear && cd $dir && if [ $fileName = main.tex ]; then ( cd ../workspace/others/push && python zzzViewGit.py ); else ( cd ../../workspace/others/push && python zzzViewGit.py ); fi;"
 },
-// latex
-// pip install Pygments
+// !latex
 // Tự động run
 "latex-workshop.latex.autoBuild.run": "never",
 // "latex-workshop.latex.autoBuild.run": "onFileChange",
@@ -30,8 +29,7 @@
 "latex-workshop.synctex.afterBuild.enabled": true,
 // Vị trí file
 "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
-// latex
+// !latex
 // Tự động lưu file
 "files.autoSave": "afterDelay",
 // Cho phép phóng to thu nhỏ
