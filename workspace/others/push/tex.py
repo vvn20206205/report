@@ -31,6 +31,7 @@ chapter="p4_"
 chapter="p5_"
 chapter="p0_"
 chapter="p001_"
+# chapter="p1gtc_"
 #####################
 # sao chép file
 ten_file_nguon  = os.path.join("../../../baocao/contents", f"_a.tex")

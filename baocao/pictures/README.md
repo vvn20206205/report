@@ -21,3 +21,4 @@ Tóm tắt nội dung theo 10 gạch đầu dòng:
 <!--@ ChatGPT --> 
 
 ![Alt text](image.png)
+microservices có hình lục giác

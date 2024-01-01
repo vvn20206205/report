@@ -24,6 +24,8 @@ class MyFormat:
         with open(path, 'r', encoding="utf-8") as file:
             contents = file.read()
 
+        contents = contents.replace('toán', ' ')
+        contents = contents.replace('TOÁN', ' ')
         contents = contents.replace('\n', '\n\n\n\n\n')
 
         while '  ' in contents:
@@ -54,6 +56,9 @@ class MyFormat:
             contents = file.read()
 
 
+
+        contents = contents.replace('toán', ' ')
+        contents = contents.replace('TOÁN', ' ')
         while '  ' in contents:
             contents = contents.replace('  ', ' ')
             
