@@ -7,21 +7,23 @@ def TimKiem(root_dir, ext):
         root_dir, f'**/*{ext}'), recursive=True)
 
 
-base_folder = os.path.join(os.getcwd(), "../../../baocao")
-folder = os.path.join(base_folder, "pictures")
+base_folder ="../../../baocao"
+pictures="../../../baocao/pictures"
 
-files = TimKiem(folder, '.png')
-files += TimKiem(folder, '.jpg')
+files = TimKiem(pictures, '.png')
+files += TimKiem(pictures, '.jpg')
 
-with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
+with open(os.path.join(pictures,"_pictures.md"), 'w') as markdown:
     for file in files:
-        markdown.write(f"========================================\n")
+        
+        markdown.write(f"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        markdown.write(f"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
         # markdown.write(f"![]({os.path.relpath(file, folder)})\n")
         markdown.write(f"\n")
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 1]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{100100100100}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -29,7 +31,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.9]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{909090909090}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -37,7 +39,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.8]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{808080808080}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -45,7 +47,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.7]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{707070707070}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -53,7 +55,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.6]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{606060606060}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -61,7 +63,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.5]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{505050505050}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -69,7 +71,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.4]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{404040404040}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -77,7 +79,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.3]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{303030303030}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -85,7 +87,7 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.2]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{202020202020}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
         markdown.write(f"%\n")
@@ -93,10 +95,11 @@ with open(os.path.join(folder,"_pictures.md"), 'w') as markdown:
         markdown.write(f"\\begin{{figure}}[H]\n")
         markdown.write(f"\\centering\n")
         markdown.write("\\includegraphics[scale = 0.1]{"+f"{os.path.relpath(file, base_folder).replace('\\', '/')}"+"}\n")
-        markdown.write("\\caption{vvn20206205}\n")
+        markdown.write("\\caption{101010101010}\n")
         markdown.write(f"\\end{{figure}}\n")
         markdown.write(f"\n")
-        markdown.write(f"========================================\n")
+        markdown.write(f"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
+        markdown.write(f"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
          
 import pyautogui
 

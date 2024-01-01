@@ -23,5 +23,5 @@ output = Convert.VarSnakeCase(input)
 # sao chép  
 pictures="../../../baocao/pictures"
 nguon =   os.path.join(pictures, "_")
-dich = os.path.join(pictures, output)
+dich = os.path.join(pictures, "_"+output)
 shutil.copytree(nguon, dich)

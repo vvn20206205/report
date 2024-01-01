@@ -11,21 +11,29 @@ if match:
 else:
     print("No match found.")
 print(input)
+input = input.replace("%", "")
 input = input.replace("(", "")
 input = input.replace(")", "")
+input = input.replace("{", "")
+input = input.replace("}", "")
 input = input.replace("/", "")
 input = input.replace("-", "")
-input = input.replace("%", "")
 input = input.replace("_", " ")
 while "  " in input:
     input = input.replace("  ", " ")
-print(input)
+# print(input)
 output = Convert.VarSnakeCase(input)
+chapter="p0_"
+chapter="p1_"
+chapter="p2_"
+chapter="p3_"
+chapter="p4_"
+chapter="p5_"
 # sao chép file
 ten_file_nguon  = os.path.join("../../../baocao/contents", f"_a.tex")
-ten_file_dich = os.path.join( "../../../baocao/contents", f"{output}"+".tex")
+ten_file_dich = os.path.join( "../../../baocao/contents", f"{chapter}{output}"+".tex")
 shutil.copy(ten_file_nguon, ten_file_dich)
-# xóa file
+# dọn file
 with open(ten_file_nguon, 'w') as file:
     file.write('')
 # return văn bản
@@ -37,9 +45,8 @@ output = "\n\n\n\n\\input{contents/" + output + "}\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # output += "% \\section{xxxxxxx}\n\n\n\n" 
 # output += "% \\subsection{xxxxxxx}\n\n\n\n" 
-output += "% \\subsubsection{xxxxxxx}\n\n\n\n" 
-
-# output += "% \\paragraph{xxxxxxx}\n\n\n\n" 
+# output += "% \\subsubsection{xxxxxxx}\n\n\n\n" 
+output += "% \\paragraph{xxxxxxx}\n\n\n\n" 
 # output += "% \\subparagraph{xxxxxxx}\n\n\n\n" 
 
 
