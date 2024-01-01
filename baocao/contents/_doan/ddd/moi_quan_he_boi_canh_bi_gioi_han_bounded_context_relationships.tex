@@ -1,53 +1,34 @@
-
-
-
 % Trong Thiết kế hướng miền (DDD), bối cảnh giới hạn là ranh giới trong đó một mô hình miền cụ thể tồn tại và hợp lệ. Các ngữ cảnh bị giới hạn giúp xác định phạm vi của mô hình miền và thiết lập sự hiểu biết rõ ràng về ngôn ngữ được sử dụng trong ngữ cảnh đó.
 
 % Các bối cảnh bị ràng buộc phải độc lập trong bối cảnh riêng của chúng, nhưng chúng vẫn có thể cần tương tác với các bối cảnh bị ràng buộc khác để hoàn thành trách nhiệm của chính chúng. Mặc dù chúng độc lập về mặt mô hình nhưng chúng có thể cần giao tiếp với các bối cảnh bị giới hạn khác để trao đổi thông tin hoặc cộng tác trong một số nhiệm vụ nhất định. Vì vậy các bối cảnh bị giới hạn có thể có mối quan hệ với nhau. Những mối quan hệ này rất quan trọng vì chúng giúp xác định sự tương tác giữa các phần khác nhau của hệ thống, cũng như thiết lập ranh giới và trách nhiệm giữa các nhóm khác nhau làm việc trên cùng một hệ thống. Có một số loại mối quan hệ bối cảnh bị ràng buộc, bao gồm:
 
-
-
-Các        bối cảnh bị  giới hạn     phải độc lập trong bối cảnh riêng và có mô hình miền riêng, nhưng các        bối cảnh bị  giới hạn   này    cần tương tác, giao tiếp để trao đổi thông tin. Vì vậy các        bối cảnh bị  giới hạn     có thể có mối quan hệ với nhau.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Các bối cảnh bị giới hạn phải độc lập trong bối cảnh riêng và có mô hình miền riêng, nhưng các bối cảnh bị giới hạn này cần tương tác, giao tiếp để trao đổi thông tin. Vì vậy các bối cảnh bị giới hạn có thể có mối quan hệ với nhau.
 
 Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 
 \begin{itemize}
 
-    \item Mối quan hệ đối xứng (Symmetric Relationship)
+\item Mối quan hệ đối xứng (Symmetric Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 2 chiều giữa 2 bối cảnh bị giới hạn .
+\textbf{Mô tả:} Thể hiện sự tương tác 2 chiều giữa 2 bối cảnh bị giới hạn .
 
-    \item Mối quan hệ bất đối xứng (Asymmetric Relationship)
+\item Mối quan hệ bất đối xứng (Asymmetric Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 2 các bối cảnh bị giới hạn .
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 2 các bối cảnh bị giới hạn .
 
-    \item Mối quan hệ 1 - nhiều (One to Many Relationship)
+\item Mối quan hệ 1 - nhiều (One to Many Relationship)
 
-          \textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 1 bối cảnh bị giới hạn với nhiều bối cảnh bị giới hạn khác.
+\textbf{Mô tả:} Thể hiện sự tương tác 1 chiều giữa 1 bối cảnh bị giới hạn với nhiều bối cảnh bị giới hạn khác.
 
 \end{itemize}
 
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.5]{pictures/cac_moi_quan_he_boi_canh_gioi_han/main.png}
+\includegraphics[scale = 0.5]{pictures/cac_moi_quan_he_boi_canh_gioi_han/main.png}
 
-    \caption{Các mối quan hệ bối cảnh bị giới hạn}
+\caption{Các mối quan hệ bối cảnh bị giới hạn}
 
 \end{figure}
 
@@ -66,6 +47,7 @@ Có 3 loại mối quan hệ giữa các bối cảnh bị giới hạn là:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Mối quan hệ đối xứng (Symmetric Relationship)}
+
 \end{document} % Kết thúc
 
 \subsubsection{Mô hình riêng biệt (Separate Ways)}
@@ -74,15 +56,15 @@ Mô hình riêng biệt (Separate Ways) khi các bối cảnh bị giới hạn 
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -132,74 +114,75 @@ Trong thực tế, nhiều bối cảnh bị giới hạn phụ thuộc lẫn nh
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
 % %! $VD: hình giao như 2 tập hợp - - >
 
 \subsection{Mối quan hệ bất đối xứng (Asymmetric Relationship)}
+
 \end{document} % Kết thúc
 
 Trong mối quan hệ bất đối xứng, một bối cảnh bị giới hạn có sự phụ thuộc vào một bối cảnh bị giới hạn khác. Mối quan hệ này được mô tả bằng cách gán vai trò cho bối cảnh bị giới hạn :
 
 \begin{itemize}
 
-    \item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
+\item \textbf{Bối cảnh bị giới hạn thượng nguồn (Upstream):}
 
-          \begin{itemize}
+\begin{itemize}
 
-              \item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.
+\item Bối cảnh bị giới hạn cung cấp cho bối cảnh bị giới hạn khác.
 
-              \item Ký hiệu: U
+\item Ký hiệu: U
 
-          \end{itemize}
+\end{itemize}
 
-    \item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
+\item \textbf{Bối cảnh bị giới hạn hạ lưu (Downstream):}
 
-          \begin{itemize}
+\begin{itemize}
 
-              \item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.
+\item Bối cảnh bị giới hạn phụ thuộc vào bối cảnh bị giới hạn khác.
 
-              \item Ký hiệu: D
+\item Ký hiệu: D
 
-          \end{itemize}
+\end{itemize}
 
 \end{itemize}
 
 \begin{example} Mối quan hệ bất đối xứng giữa bối cảnh bị giới hạn A và bối cảnh bị giới hạn B.
 
-    \begin{itemize}
+\begin{itemize}
 
-        \item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
+\item Bối cảnh bị giới hạn A ràng buộc với bối cảnh bị giới hạn B
 
-        \item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
+\item Bối cảnh bị giới hạn A đóng vai trò là bối cảnh bị giới hạn hạ lưu (Downstream)
 
-        \item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
+\item Bối cảnh bị giới hạn B đóng vai trò là bối cảnh bị giới hạn thượng nguồn (Upstream)
 
-        \item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
+\item Bối cảnh bị giới hạn A có kiến thức về các mô hình trong bối cảnh bị giới hạn B
 
-        \item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
+\item Bối cảnh bị giới hạn B không có bất kỳ kiến thức nào về mô hình trong bối cảnh bị giới hạn A
 
-    \end{itemize}
+\end{itemize}
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/moi_quan_he_bat_doi_xung/main.drawio.png}
 
-        \caption{Ví dụ mối quan hệ bất đối xứng}
+\caption{Ví dụ mối quan hệ bất đối xứng}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -211,9 +194,9 @@ Khi đó:
 
 \begin{itemize}
 
-    \item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
+\item Bối cảnh bị giới hạn thượng nguồn được gọi là nhà cung cấp.
 
-    \item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
+\item Bối cảnh bị giới hạn hạ lưu được gọi là khách hàng.
 
 \end{itemize}
 
@@ -269,15 +252,15 @@ Trong mô hình tuân thủ bối cảnh bị giới hạn hạ lưu được k�
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -331,15 +314,15 @@ Trong mô hình chống đổ vỡ bối cảnh bị giới hạn hạ lưu đư
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -389,15 +372,15 @@ Trong bản đồ bối cảnh, dịch vụ máy chủ mở được ký hiệu 
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -445,15 +428,15 @@ Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp d�
 
 \begin{example} Trong miền vấn đề ngân hàng, thẻ tín dụng và khoản vay mua nhà không có mối quan hệ.
 
-    \begin{figure}[H]
+\begin{figure}[H]
 
-        \centering
+\centering
 
-        \includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
+\includegraphics[scale = 0.5]{pictures/mo_hinh_rieng_biet_separate_ways/main.drawio.png}
 
-        \caption{Ví dụ mô hình riêng biệt (Separate Ways)}
+\caption{Ví dụ mô hình riêng biệt (Separate Ways)}
 
-    \end{figure}
+\end{figure}
 
 \end{example}
 
@@ -484,3 +467,4 @@ Trong bản đồ bối cảnh, ngôn ngữ được xuất bản kết hợp d�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

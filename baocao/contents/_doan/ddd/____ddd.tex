@@ -1,44 +1,83 @@
-%! Nghiệp vụ ở bên trên 
+%! Nghiệp vụ ở bên trên
+
 \chapter{Thiết kế hướng miền}
+
 % \input{contents/thiet_ke_huong_mien}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Các mẫu chiến lược}
+
 % Các mẫu chiến lược phân tích nghiệp vụ kinh doanh sau đó đưa ra việc phân chia các thành phần và hiểu mối quan hệ của các thành phần đó. Các mẫu chiến lược giúp xác định các thành phần quan trọng của hệ thống, đảm bảo kiến trúc phần mềm phản ánh đúng các yêu cầu kinh doanh. Từ việc phân chia hệ thống thành các thành phần nhỏ, chúng ta có thể tạo ra hệ thống mở rộng dễ dàng, phát triển linh hoạt theo nhu cầu kinh doanh.
 
 % Các mẫu chiến lược bao gồm:
+
 % \begin{itemize}
+
 % \item Miền phụ (Sub - Domain)
+
 % !trình bày thêm nội dung nhỏ
+
 % \end{itemize}
+
 % \begin{figure}[H]
+
 % \centering
+
 % \includegraphics[scale = 0.9]{pictures/cac_mau_chien_luoc/temp.png}
+
 % \caption{Sơ đồ về các thành phần trong mẫu chiến lược}
+
 % \end{figure}
+
 %!<! - - $ Vẽ lại sau khi trình bày xong các mục nhỏ - - >
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Miền phụ (Sub - Domain)}
+
 % \input{contents/mien_phu_sub_domain}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Bối cảnh bị giới hạn (Bounded Context)}
-% \input{contents/boi_canh_bi_gioi_han_bounded_context} 
+
+% \input{contents/boi_canh_bi_gioi_han_bounded_context}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{ Tích hợp liên tục  (Continuous Integration)}
+
+\subsection{Tích hợp liên tục (Continuous Integration)}
+
 % \input{contents/tich_hop_lien_tuc_continuous_integration}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Ngôn ngữ chung (Ubiquitous Language)}
+
 % \input{contents/ngon_ngu_chung_ubiquitous_language}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
+
 % \input{contents/moi_quan_he_boi_canh_bi_gioi_han_bounded_context_relationships}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Bản đồ bối cảnh (Context Maps)}
+
 % \input{contents/ban_do_boi_canh_context_maps}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Các mẫu kỹ thuật } \label{section:cac_mau_ky_thuat}
+
+\section{Các mẫu kỹ thuật} \label{section:cac_mau_ky_thuat}
+
 \end{document} % Kết thúc
 
 Các mẫu kỹ thuật được sử dụng để lập mô hình và hiện thực hóa các thành phần riêng lẻ của hệ thống microservices. Các mẫu kỹ thuật tập trung mô hình hóa miền và triển khai logic nghiệp vụ trong lập trình.
@@ -47,35 +86,35 @@ Các yếu tố các mẫu kỹ thuật bao gồm:
 
 \begin{itemize}
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc1
+\item Muc1
 
-    \item Muc2
+\item Muc2
 
 \end{itemize}
 
 \begin{figure}[H]
 
-    \centering
+\centering
 
-    \includegraphics[scale = 0.8]{pictures/cac_mau_ky_thuat/temp.png}
+\includegraphics[scale = 0.8]{pictures/cac_mau_ky_thuat/temp.png}
 
-    \caption{vvn20206205}
+\caption{vvn20206205}
 
 \end{figure}
 
@@ -113,11 +152,11 @@ Các yếu tố các mẫu kỹ thuật bao gồm:
 
 \begin{itemize}
 
-    \item Đối tượng thực thể (Entities Objects)
+\item Đối tượng thực thể (Entities Objects)
 
-    \item Đối tượng giá trị (Value Objects)
+\item Đối tượng giá trị (Value Objects)
 
-    \item Miền dịch vụ (Service Domain)
+\item Miền dịch vụ (Service Domain)
 
 \end{itemize}
 
@@ -327,57 +366,57 @@ Dưới đây là ví dụ về giao diện của thực thể Đơn hàng trong
 
 public class Order {
 
-        private OrderId orderId;
+private OrderId orderId;
 
-        private Customer customer;
+private Customer customer;
 
-        private List<Product> products;
+private List<Product> products;
 
-        private Date orderDate;
+private Date orderDate;
 
-        private PaymentDetails paymentDetails;
+private PaymentDetails paymentDetails;
 
-        private ShippingDetails shippingDetails;
+private ShippingDetails shippingDetails;
 
-        public Order(OrderId orderId, Customer customer) {
+public Order(OrderId orderId, Customer customer) {
 
-                this.orderId = orderId;
+this.orderId = orderId;
 
-                this.customer = customer;
+this.customer = customer;
 
-                this.products = Lists.newArrayList();
+this.products = Lists.newArrayList();
 
-                this.orderDate = LocalDate.now();
+this.orderDate = LocalDate.now();
 
-            }
+}
 
-        public void addProduct(Product product) {
+public void addProduct(Product product) {
 
-                products.add(product);
+products.add(product);
 
-            }
+}
 
-        public void removeProduct(Product product) {
+public void removeProduct(Product product) {
 
-                products.remove(product);
+products.remove(product);
 
-            }
+}
 
-        public void processPayment() {
+public void processPayment() {
 
-                // Process payment logic here...
+// Process payment logic here...
 
-            }
+}
 
-        public void shipOrder() {
+public void shipOrder() {
 
-                // Shipping logic here...
+// Shipping logic here...
 
-            }
+}
 
-        // Other behavior methods here...
+// Other behavior methods here...
 
-    }
+}
 
 Trong ví dụ này, thực thể Đơn hàng có một ID duy nhất (orderId) xác định nó trong hệ thống, cùng với các thuộc tính khác như customer, < /span>, gói gọn logic kinh doanh được liên kết với thực thể đơn hàng., và,, . Thực thể cũng có các phương thức hành vi, chẳng hạn như và, products, orderDatepaymentDetailsshippingDetailsaddProductremoveProductprocessPaymentshipOrder
 
@@ -519,33 +558,33 @@ số 8
 
 class Price {
 
-        private final Currency currency;
+private final Currency currency;
 
-        private final BigDecimal amount;
+private final BigDecimal amount;
 
-        public Price(Currency currency, BigDecimal amount) {
+public Price(Currency currency, BigDecimal amount) {
 
-                this.currency = currency;
+this.currency = currency;
 
-                this.amount = amount;
+this.amount = amount;
 
-            }
+}
 
-        public Currency getCurrency() {
+public Currency getCurrency() {
 
-                return currency;
+return currency;
 
-            }
+}
 
-        public BigDecimal getAmount() {
+public BigDecimal getAmount() {
 
-                return amount;
+return amount;
 
-            }
+}
 
-        // Other methods and business logic specific to the Price concept
+// Other methods and business logic specific to the Price concept
 
-    }
+}
 
 Trong ví dụ này, đối tượng giá trị Price có hai thuộc tính: currency và amount. Thuộc tính currency đại diện cho đơn vị tiền tệ của giá (ví dụ: USD, EUR, v.v.), trong khi thuộc tính amount đại diện cho giá trị bằng số của giá. Đối tượng Price là bất biến và trạng thái của nó không thể thay đổi sau khi được tạo. Đối tượng Price cũng xác định các phương thức để truy xuất các thuộc tính của nó (ví dụ: getCurrency() và getAmount()), cũng như các phương thức khác dành riêng cho < khái niệm /span>). hoặc Price (ví dụ: phương thức add()subtract()
 
@@ -647,29 +686,29 @@ số 8
 
 public class OrderService {
 
-        private final OrderRepository orderRepository;
+private final OrderRepository orderRepository;
 
-        private final ProductRepository productRepository;
+private final ProductRepository productRepository;
 
-        public void createOrder(Order order) {
+public void createOrder(Order order) {
 
-                for (OrderItem item: order.getItems()) {
+for (OrderItem item: order.getItems()) {
 
-                        Product product = productRepository.findById(item.getProductId());
+Product product = productRepository.findById(item.getProductId());
 
-                        product.reduceStockBy(item.getQuantity());
+product.reduceStockBy(item.getQuantity());
 
-                        productRepository.save(product);
+productRepository.save(product);
 
-                    }
+}
 
-                orderRepository.save(order);
+orderRepository.save(order);
 
-            }
+}
 
-        // Other methods...
+// Other methods...
 
-    }
+}
 
 Trong ví dụ này, OrderService chịu trách nhiệm tạo đơn đặt hàng và nó tương tác với hai tập hợp: Order và Product. Tổng hợp Order đại diện cho đơn đặt hàng do khách hàng đặt, trong khi tổng hợp Product đại diện cho một sản phẩm có thể được đặt hàng.
 
