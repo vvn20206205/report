@@ -1,6 +1,5 @@
 <!--@ Latex -->
 <!-- Cần thêm nhiều ví dụ -->
-Màu đỏ của số trang, đầu chương
 <!-- Tiêu đề chương các mục có tiếng anh -->
 <!-- ảnh,  bảng luôn căn giữa -->
 <!-- ảnh,  bảng luôn  có 2 begin + end -->
@@ -12,6 +11,8 @@ Màu đỏ của số trang, đầu chương
 <!--! có dùng ngăn cách -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 <!-- \usepackage{wrapfig} -->
+Màu xanh đỏ của số trang, đầu chương
+Màu xanh của bìa
 <!--@ Latex -->
 
 <!--@ ChatGPT -->
