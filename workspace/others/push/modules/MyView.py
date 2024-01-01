@@ -17,11 +17,14 @@ class MyView:
         pyautogui.hotkey('ctrl', 'b')
 
     def CollapseFolders():
+        MyView.Target(1)
         pyautogui.hotkey('ctrl', 'shift', 'e')
 
         pyautogui.keyDown('ctrl')
         pyautogui.press('left')
         pyautogui.keyUp('ctrl')
+
+        MyView.Target(2)
 
     def OpenGit():
         pyautogui.hotkey('ctrl', 'shift', 'g')
