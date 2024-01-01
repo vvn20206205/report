@@ -24,13 +24,15 @@ while "  " in input:
 # print(input)
 output = Convert.VarSnakeCase(input)
 #####################
-chapter="msa_"
 chapter="ddd_"
 chapter="p4_"
 chapter="p5_"
+
+
 chapter="p0_"
 chapter="p001_"
 chapter="p1_hddt_"
+chapter="p2_msa_"
 #####################
 # sao chép file
 ten_file_nguon  = os.path.join("../../../baocao/contents", f"_a.tex")
