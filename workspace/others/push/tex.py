@@ -51,7 +51,7 @@ output = "\n\n\n\n\\input{contents/" +  f"{chapter}{output}" + "}\n\n\n\n\n\n\n\
 # output += "% \\paragraph{xxxxxxx}\n\n\n\n" 
 # output += "% \\subparagraph{xxxxxxx}\n\n\n\n" 
 #####################
-# output += "% \\input{contents/_a}\n\n\n\n" 
+output += "% \\input{contents/_a}\n\n\n\n" 
 pyperclip.copy(output)
 import pyautogui
 pyautogui.hotkey('alt', '2')
