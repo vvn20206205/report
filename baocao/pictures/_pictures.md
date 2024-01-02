@@ -18,6 +18,232 @@
 
 \begin{figure}[H]
 \centering
+\includegraphics[scale = 1]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{100100100100}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.9]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{909090909090}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.8]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{808080808080}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.7]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{707070707070}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.6]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{606060606060}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.5]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{505050505050}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.4]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{404040404040}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.3]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{303030303030}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.2]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{202020202020}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.1]{pictures/cac_mau_chien_luoc/main.drawio.png}
+\caption{101010101010}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 1]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{100100100100}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.9]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{909090909090}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.8]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{808080808080}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.7]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{707070707070}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.6]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{606060606060}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.5]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{505050505050}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.4]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{404040404040}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.3]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{303030303030}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.2]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{202020202020}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.1]{pictures/cac_mau_chien_luoc/temp.png}
+\caption{101010101010}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\centering
 \includegraphics[scale = 1]{pictures/_/main.drawio.png}
 \caption{100100100100}
 \end{figure}
