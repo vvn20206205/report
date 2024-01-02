@@ -29,5 +29,3 @@ pictures="../../../baocao/pictures"
 nguon =   os.path.join(pictures, "_")
 dich = os.path.join(pictures, "_"+output)
 shutil.copytree(nguon, dich)
-import subprocess
-subprocess.run(" python __list_pictures.py",shell=True)

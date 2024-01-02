@@ -17,6 +17,7 @@
 Hãy giúp tôi sửa lỗi chính tả và ngữ pháp và mạch lạc:
 Tóm tắt nội dung theo 10 gạch đầu dòng:
 <!--! Hãy sử dụng Ngôn ngữ chung (Ubiquitous Language) trong domain driven design (DDD) với nội dung nghiệp vụ kinh doanh sau: -->
+<!-- Trình bày về Relationship trong domain driven design -->
 <!--@ ChatGPT --> 
 
 ![Alt text](image.png)
