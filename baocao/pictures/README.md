@@ -11,8 +11,6 @@
 <!--! có dùng ngăn cách -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 <!-- \usepackage{wrapfig} -->
-Màu xanh đỏ của     đầu chương
-Màu xanh của bìa
 <!--@ Latex -->
 
 <!--@ ChatGPT -->
