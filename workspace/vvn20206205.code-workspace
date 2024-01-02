@@ -53,6 +53,7 @@
 "terminal.integrated.defaultProfile.windows": "Git Bash",
 // Sử dụng mặc định cho terminal trên Linux
 "terminal.integrated.defaultProfile.linux": "bash",
+"editor.wordWrap": "on",
 // !extensions
 // Chạy mã trong terminal
 "code-runner.runInTerminal": true,
