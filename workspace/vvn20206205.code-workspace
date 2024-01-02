@@ -1,29 +1,29 @@
 {
 "folders": [
-    {
-        "name": "report",
-        "path": ".."
-    },
-    {
-        "name": "baocao",
-        "path": "../baocao"
-    },
-    {
-        "name": "pictures",
-        "path": "../baocao/pictures"
-    },
-    {
-        "name": "gt_hddt",
-        "path": "../baocao/contents/gt_hddt"
-    },
-    {
-        "name": "gt_msa",
-        "path": "../baocao/contents/gt_msa"
-    },
-    {
-        "name": "_doan",
-        "path": "../baocao/contents/_doan"
-    }
+{
+"name": "report",
+"path": ".."
+},
+{
+"name": "baocao",
+"path": "../baocao"
+},
+{
+"name": "pictures",
+"path": "../baocao/pictures"
+},
+{
+"name": "gt_hddt",
+"path": "../baocao/contents/gt_hddt"
+},
+{
+"name": "gt_msa",
+"path": "../baocao/contents/gt_msa"
+},
+{
+"name": "_doan",
+"path": "../baocao/contents/_doan"
+}
 ],
 "settings": {
 "code-runner.executorMap": {

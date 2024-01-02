@@ -102,6 +102,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %# Thiết kế hướng miền
 \chapter{Thiết kế hướng miền}
+\input{contents/p3_ddd_thiet_ke_huong_mien}
 % \section{xxxxxxxxxxxxxxxxxx}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,25 +116,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %# Một số công nghệ trong kiến trúc vi dịch vụ
 \chapter{Một số công nghệ trong kiến trúc vi dịch vụ}
-% \section{xxxxxxxxxxxxxxxxxx}
-\end{document}
+% % \section{xxxxxxxxxxxxxxxxxx}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Thiết kế hướng miền}
+% % phải có CQRS (Phân chia trách nhiệm truy vấn lệnh)
 
-\input{contents/p3_ddd_thiet_ke_huong_mien}
+% CQRS là một mẫu kiến trúc riêng biệt có thể được sử dụng kết hợp với thiết kế hướng miền để đạt được những lợi ích nhất định, chẳng hạn như cải thiện hiệu suất và khả năng mở rộng. Tuy nhiên, nó không phải là một yêu cầu để triển khai thiết kế hướng miền.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{contents/_a}
+% % phải có event
+
+
+% Cách tiếp cận này nhấn mạnh tính mô - đun, tính linh hoạt và khả năng phục hồi, cho phép các nhóm làm việc đồng thời trên các phần khác nhau của hệ thống và cho phép phát hành nhanh hơn và thường xuyên hơn. Các vi dịch vụ thường dựa vào các giao thức truyền thông nhẹ, chẳng hạn như REST và thường được triển khai bằng các công nghệ chứa trong bộ chứa như Docker và Kubernetes.
+
+% \subsubsection{DevOps Ứng dụng, áp dụng, liên quan,....}
+
+% \subsubsection{Github}
+
+% \subsubsection{CI/CD}
+
+% \subsubsection{Docker}
+
+% \subsubsection{Kubernetes}
+
+% dícovery
+
+% api gateway
+
+\end{document} 
 %!%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %!%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %!%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,36 +164,3 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{contents/____ddd}
-% \input{contents/_a.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-vvn20206205
-% https://authorization-service-api.web.cern.ch/swagger/index.html
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% phải có CQRS (Phân chia trách nhiệm truy vấn lệnh)
-
-CQRS là một mẫu kiến trúc riêng biệt có thể được sử dụng kết hợp với thiết kế hướng miền để đạt được những lợi ích nhất định, chẳng hạn như cải thiện hiệu suất và khả năng mở rộng. Tuy nhiên, nó không phải là một yêu cầu để triển khai thiết kế hướng miền.
-
-% phải có event
-
-Ngôn ngữ chung (Ubiquitous Language)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Cách tiếp cận này nhấn mạnh tính mô - đun, tính linh hoạt và khả năng phục hồi, cho phép các nhóm làm việc đồng thời trên các phần khác nhau của hệ thống và cho phép phát hành nhanh hơn và thường xuyên hơn. Các vi dịch vụ thường dựa vào các giao thức truyền thông nhẹ, chẳng hạn như REST và thường được triển khai bằng các công nghệ chứa trong bộ chứa như Docker và Kubernetes.
-
-\subsubsection{DevOps Ứng dụng, áp dụng, liên quan,....}
-
-\subsubsection{Github}
-
-\subsubsection{CI/CD}
-
-\subsubsection{Docker}
-
-\subsubsection{Kubernetes}
-
-dícovery
-
-api gateway
