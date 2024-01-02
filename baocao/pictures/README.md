@@ -24,6 +24,25 @@ Tóm tắt nội dung theo 10 gạch đầu dòng:
 <!-- KHOA TOÁN - TIN  -->
 <!-- microservices có hình lục giác -->
 
+baocao\temp\gt_hddt\yeu_cau_nghiep_vu_chua_xong.tex
+
+
+
+
+
+baocao\temp\gt_msa\main.tex
+baocao\temp\gt_msa\folder\kien_truc_nguyen_khoi.tex
+baocao\temp\gt_msa\folder\kien_truc_vi_dich_vu.tex
+baocao\temp\gt_msa\folder\mot_so_dac_diem_va_uu_diem_cua_kien_truc_vi_dich_vu.tex
+baocao\temp\gt_msa\folder\mot_so_nhuoc_diem_va_thach_thuc_cua_kien_truc_vi_dich_vu.tex
+baocao\temp\_doan\____ddd.tex
+baocao\temp\_doan\____ddd2.tex
+baocao\temp\_doan\folder\ban_do_boi_canh_context_maps.tex
+baocao\temp\_doan\folder\boi_canh_bi_gioi_han_bounded_context.tex
+baocao\temp\_doan\folder\moi_quan_he_boi_canh_bi_gioi_han_bounded_context_relationships.tex
+baocao\temp\_doan\folder\ngon_ngu_chung_ubiquitous_language.tex       
+baocao\temp\_doan\folder\tich_hop_lien_tuc_continuous_integration.tex 
+baocao\temp\_doan\_ddd_srt.md
 %
 %
 %
