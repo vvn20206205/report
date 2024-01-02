@@ -432,14 +432,7 @@ Các dịch vụ cơ sở hạ tầng cung cấp các tài nguyên bên ngoài t
 <!--@============================================== -->
 
 <!--@============================================== -->
-
-tối nay phair xong ddd
-
-nếu có thể thì làm cái nghiệp vụ
-
-xem video itiso
-
-latex ctg htpt ttss
+ 
 
 <!-- -->
 
@@ -450,17 +443,7 @@ latex ctg htpt ttss
 <!-- -->
 
 <!-- -->
-
-<!--! Hãy sử dụng Ngôn ngữ chung (Ubiquitous Language) trong domain driven design (DDD) với nội dung nghiệp vụ kinh doanh sau: -->
-
-<!-- 1. **Khách hàng (Customer):** -->
-
-<!-- - **Mô tả:** Người sử dụng dịch vụ, có thể là cá nhân hoặc tổ chức. -->
-
-<!-- 2. **Hóa đơn điện tử (Electronic Invoice):** -->
-
-<!-- - **Mô tả:** Hóa đơn được tạo và quản lý điện tử thay vì truyền thống trên giấy. -->
-
+ 
 <!--@ -->
 
 <!--@ -->

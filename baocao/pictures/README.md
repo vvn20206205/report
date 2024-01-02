@@ -16,8 +16,9 @@
 <!--@ ChatGPT -->
 Hãy giúp tôi sửa lỗi chính tả và ngữ pháp và mạch lạc:
 Tóm tắt nội dung theo 10 gạch đầu dòng:
+<!--! Hãy sử dụng Ngôn ngữ chung (Ubiquitous Language) trong domain driven design (DDD) với nội dung nghiệp vụ kinh doanh sau: -->
 <!--@ ChatGPT --> 
 
 ![Alt text](image.png)
 <!-- KHOA TOÁN - TIN  -->
-microservices có hình lục giác
+<!-- microservices có hình lục giác -->
