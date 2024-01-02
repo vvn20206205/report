@@ -17,6 +17,7 @@ class MyFormat:
         while "\n\n\n" in contents:
             contents = contents.replace("\n\n\n", "\n\n")
         contents = contents.lstrip('\n')
+        contents = contents.rstrip('\n')
         with open(path, 'w', encoding="utf-8") as file:
             file.write(contents)
     
@@ -76,5 +77,6 @@ class MyFormat:
         while "\n\n\n" in contents:
             contents = contents.replace("\n\n\n", "\n\n")
         contents = contents.lstrip('\n')
+        contents = contents.rstrip('\n')
         with open(path, 'w', encoding="utf-8") as file:
             file.write(contents)
