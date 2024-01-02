@@ -14,15 +14,15 @@
 },
 {
 "name": "gt_hddt",
-"path": "../baocao/contents/gt_hddt"
+"path": "../baocao/temp/gt_hddt"
 },
 {
 "name": "gt_msa",
-"path": "../baocao/contents/gt_msa"
+"path": "../baocao/temp/gt_msa"
 },
 {
 "name": "_doan",
-"path": "../baocao/contents/_doan"
+"path": "../baocao/temp/_doan"
 }
 ],
 "settings": {
