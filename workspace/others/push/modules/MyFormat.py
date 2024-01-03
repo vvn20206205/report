@@ -27,6 +27,14 @@ class MyFormat:
 
         contents = contents.replace('\n', '\n\n\n\n\n')
 
+
+
+        while ' ,' in contents:
+            contents = contents.replace(' ,', ',')
+        contents = contents.replace(',', ', ')
+
+
+
         while '  ' in contents:
             contents = contents.replace('  ', ' ')
             
@@ -56,6 +64,9 @@ class MyFormat:
             contents = file.read()
 
 
+        while ' ,' in contents:
+            contents = contents.replace(' ,', ',')
+        contents = contents.replace(',', ', ')
 
         while '  ' in contents:
             contents = contents.replace('  ', ' ')
