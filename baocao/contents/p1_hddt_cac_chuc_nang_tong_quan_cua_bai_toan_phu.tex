@@ -341,7 +341,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \begin{itemize}
 
-                                  \item Mã hóa đơn
+                                  \item Số hóa đơn
 
                                   \item Ngày lập hóa đơn
 
@@ -391,15 +391,17 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \begin{itemize}
 
-                                  \item Người tra cứu nhập thông tin: Mã hóa đơn.
+                                  \item Người tra cứu nhập  thông tin bao gồm:   mã số thuế người bán, số hóa đơn, tổng   tiền sau thuế.
+                                        \textbf{Kết quả:}
 
-                                        % % %!<! - - Kết quả: - - >
 
-                                        % % %!<! - - - Nếu hóa đơn điện tử không hợp lệ, hệ thống sẽ hiển thị thông báo: "Không tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm”. - - >
+                                        \begin{itemize}
 
-                                        % % %!<! - - - Nếu hóa đơn điện tử hợp lệ, hệ thống sẽ hiển thị thông báo: "Tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm". - - >
+                                            \item Nếu thông tin hóa đơn không hợp lệ,   hệ thống sẽ thông báo: "Không tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm." %# Code
+                                            \item Nếu thông tin hóa đơn   hợp lệ,   hệ thống sẽ thông báo: "Tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm." %# Code
 
-                                        % % %!<! - - - Nếu hóa đơn tìm kiếm là hóa đơn thay thế, bị thay thế hệ thống sẽ hiển thị thông tin bổ sung về hóa đơn liên quan: "Hóa đơn này là hóa đơn thay thế cho hóa đơn có ID: {{ID}}" hoặc "Hóa đơn này là hóa đơn bị thay thế của hóa đơn có ID: {{ID}}". - - >
+                                            \item  Nếu hóa đơn     là hóa đơn thay thế, bị thay thế hệ thống sẽ hiển thị thông tin bổ sung về hóa đơn liên quan:   "Hóa đơn này là hóa đơn thay thế cho hóa đơn có số hóa đơn là: số hóa đơn."    hoặc    "Hóa đơn này là hóa đơn bị thay thế của hóa đơn có có số hóa đơn là: số hóa đơn." %# Code
+                                        \end{itemize}
 
                               \end{itemize}
 
@@ -407,13 +409,16 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \begin{itemize}
 
-                                  \item Người tra cứu nhập thông tin bao gồm: Mã số thuế.
+                                  \item Người tra cứu nhập mã số thuế.
+                                        \textbf{Kết quả:}
 
-                                        % % %!<! - - Kết quả: - - >
 
-                                        % % %!<! - - - Nếu đã đăng kí, hệ thống sẽ hiển thị thông báo: “MST 0107001729 đã đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
+                                        \begin{itemize}
 
-                                        % % %!<! - - - Nếu NNT chưa đăng kí hoặc đã đăng kí nhưng cơ quan thuế có thông báo về việc không được chấp nhận đăng kí sử dụng hóa đơn điện tử, hệ thống sẽ hiển thị thông báo: “MST 0107001728 chưa sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
+                                            \item Nếu đã đăng kí, hệ thống sẽ hiển thị thông báo: “MST 0107001729 đã đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP."
+
+                                            \item Nếu NNT chưa đăng kí  , hệ thống sẽ hiển thị thông báo: “MST 0107001728 chưa sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP."
+                                        \end{itemize}
 
                               \end{itemize}
 
