@@ -25,41 +25,11 @@ Tóm tắt nội dung theo 10 gạch đầu dòng:
 <!-- KHOA TOÁN - TIN  -->
 <!-- microservices có hình lục giác -->
 
-baocao\temp\gt_hddt\yeu_cau_nghiep_vu_chua_xong.tex
 
 
 
 
-
-baocao\temp\gt_msa\main.tex
-baocao\temp\gt_msa\folder\kien_truc_nguyen_khoi.tex
-baocao\temp\gt_msa\folder\kien_truc_vi_dich_vu.tex
-baocao\temp\gt_msa\folder\mot_so_dac_diem_va_uu_diem_cua_kien_truc_vi_dich_vu.tex
-baocao\temp\gt_msa\folder\mot_so_nhuoc_diem_va_thach_thuc_cua_kien_truc_vi_dich_vu.tex
-baocao\temp\_doan\____ddd.tex
-baocao\temp\_doan\____ddd2.tex
-baocao\temp\_doan\folder\ban_do_boi_canh_context_maps.tex
-baocao\temp\_doan\folder\boi_canh_bi_gioi_han_bounded_context.tex
-baocao\temp\_doan\folder\moi_quan_he_boi_canh_bi_gioi_han_bounded_context_relationships.tex
-baocao\temp\_doan\folder\ngon_ngu_chung_ubiquitous_language.tex       
-baocao\temp\_doan\folder\tich_hop_lien_tuc_continuous_integration.tex 
-baocao\temp\_doan\_ddd_srt.md
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-
-%
-
+ 
 Trong thời đại ngày nay, nhu cầu phát triển ứng dụng và hệ thống ngày càng tăng, đặt ra thách thức đối với kiến trúc phần mềm. Kiến trúc nguyên khối đã phục vụ hiệu quả trong quá khứ, nhưng kiến trúc này bắt đầu gặp khó khăn khi đối mặt với sự phức tạp, khả năng mở rộng và khả năng đáp ứng linh hoạt với sự thay đổi nhanh chóng trong yêu cầu kinh doanh.
 
 % Kiến trúc vi dịch vụ là giải pháp cho những thách thức trên. Kiến trúc vi dịch vụ chia dự án thành những dịch vụ nhỏ độc lập, mỗi dịch vụ chịu trách nhiệm về một chức năng cụ thể. Từ đó, dự án giảm sự phức tạp, tăng tính linh hoạt và dễ dàng quản lý.
