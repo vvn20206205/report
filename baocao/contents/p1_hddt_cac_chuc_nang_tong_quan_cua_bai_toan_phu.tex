@@ -2,349 +2,349 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 \begin{itemize}
 
-      \item Quản lý tài khoản
+    \item Quản lý tài khoản
 
-            \begin{itemize}
+          \begin{itemize}
 
-                  \item Đăng ký
+              \item Đăng ký
 
-                        \begin{itemize}
+                    \begin{itemize}
 
-                              \item Để đăng ký, người nộp thuế cần chuẩn bị:
-
-                                    \begin{itemize}
-
-                                          \item Mã số thuế
-
-                                          \item Chữ ký số     %# Code QR
-
-                                    \end{itemize}
-
-                              \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm:      %# Code file
-
-                                    \begin{itemize}
-
-                                          \item Tên người nộp thuế
-
-                                          \item Mã cơ quan thuế
-
-                                          \item Tên cơ quan thuế
-
-
-
-                                    \end{itemize}
-
-                                    \begin{vmatrix}
-
-                                          \begin{itemize}
-
-                                                \item Mã số thuế có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".         %# Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng."
-
-                                                      \begin{example}
-
-                                                            Mã số thuế 10 ký tự: 0123456789
-
-                                                            Mã số thuế 14 ký tự: 0123456789-001
-
-                                                      \end{example}
-
-
-                                                \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã đăng ký sử dụng hóa đơn điện tử."    %# Code
-
-                                          \end{itemize}
-                                    \end{vmatrix}
-
-                              \item Tiếp theo, người nộp thuế nhập các thông tin:
-
-                                    \begin{itemize}
-
-                                          \item Người liên hệ
-
-                                          \item Điện thoại liên hệ
-
-                                          \item Địa chỉ liên hệ
-
-                                          \item Thư điện tử
-
-                                    \end{itemize}
-
-                                    \begin{vmatrix}
-
-                                          \begin{itemize}
-
-                                                \item Người liên hệ: phải chứa một chuỗi kí tự tên    hợp lệ, không có số    và không được để trống.     %# Code
-
-                                                \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.     %# Code
-
-                                                \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.   %# Code
-
-                                                \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống.    %# Code
-
-                                          \end{itemize}
-                                    \end{vmatrix}
-
-                              \item Người nộp thuế chọn hình thức hóa đơn:   %# Code enum
-
-                                    \begin{itemize}
-
-                                          \item Hóa đơn có mã của cơ quan thuế
-
-                                          \item Hóa đơn không có mã của cơ quan thuế
-
-
-
-                                    \end{itemize}
-
-                              \item Người nộp thuế chọn loại hóa đơn:   %# Code enum
-
-                                    \begin{itemize}
-
-                                          \item Hóa đơn điện tử giá trị gia tăng
-
-                                          \item Hóa đơn bán hàng
-
-                                          \item Hóa đơn bán tài sản công
-
-                                          \item Hóa đơn bán hàng dự trữ quốc gia
-
-                                          \item Hóa đơn khác
-
-
-                                    \end{itemize}
-
-                              \item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
-
-                                    $\Rightarrow$ \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký.}           %# Code "Gửi thông tin đăng ký hóa đơn điện tử cho cơ quan thuế thành công."
-
-                        \end{itemize}
-
-                  \item Đăng nhập
-
-                        \begin{itemize}
-
-                              \item Trong thông báo     chấp nhận đăng ký, người nộp thuế nhận được thông tin đăng nhập tài khoản của người quản trị bao gồm:
-
-                                    \begin{itemize}
-
-                                          \item Tên đăng nhập
-
-                                          \item Mật khẩu
-
-                                    \end{itemize}
-
-                              \item Người nộp thuế sử dụng thông tin đăng nhập để thực hiện đăng nhập.
-
-                                    \begin{vmatrix}
-
-                                          \begin{itemize}
-
-                                                \item Nếu thông tin đăng nhập không chính xác, hệ thống sẽ thông báo: "Thông tin đăng nhập không chính xác."    %# Code
-
-                                          \end{itemize}
-                                    \end{vmatrix}
-
-                        \end{itemize}
-
-                  \item Đăng xuất
-
-                        \begin{itemize}
-
-                              \item Chức năng đăng xuất tài khoản.
-
-                        \end{itemize}
-
-                  \item Quên mật khẩu
-
-                        \begin{itemize}
-
-                              \item \emph{Chức năng quên mật khẩu chỉ áp dụng cho tài khoản của người quản trị.}
-
-                              \item Người nộp thuế cung cấp tên đăng nhập.
-
-                              \item Người nộp thuế dùng chữ ký số để gửi yêu cầu khôi phục mật khẩu.
-
-                                    $\Rightarrow$ \emph{Sau khi gửi yêu cầu, người nộp thuế sẽ nhận được mật khẩu mới qua thư điện tử.}    %# Code "Gửi yêu cầu khôi phục mật khẩu thành công."
-
-                        \end{itemize}
-
-                  \item Đổi mật khẩu
-
-                        \begin{itemize}
-
-                              \item Để thay đổi mật khẩu cần cung cấp thông tin:
-
-                                    \begin{itemize}
-
-                                          \item Mật khẩu cũ
-
-                                          \item Mật khẩu mới
-
-                                          \item Nhập lại mật khẩu mới
-
-                                    \end{itemize}
-
-                                    \begin{vmatrix}
-
-                                          \begin{itemize}
-
-                                                \item   Mật khẩu:  phải chứa một chuỗi  có độ dài lớn hơn 8 kí tự     và không được để trống.     %# Code
-                                                \item Nếu mật khẩu cũ không chính xác, hệ thống sẽ thông báo: "Mật khẩu cũ không chính xác."      %# Code
-                                                \item Nếu mật khẩu mới không trùng khớp, hệ thống sẽ thông báo: "Mật khẩu mới không trùng khớp."    %# Code
-
-                                          \end{itemize}
-                                    \end{vmatrix}
-
-                        \end{itemize}
-
-                  \item Thay đổi thông tin
-
-                        \begin{itemize}
-
-                              \item Trong quá trình sử dụng hóa đơn điện tử, người nộp thuế có thể thay đổi thông tin:
-
-                                    \begin{itemize}
-
-                                          \item Tên người nộp thuế
-
-                                          \item Người liên hệ
-
-                                          \item Điện thoại liên hệ
-
-                                          \item Địa chỉ liên hệ
-
-                                          \item Thư điện tử
-
-                                    \end{itemize}
-
-                                    \begin{vmatrix}
-
-                                          \begin{itemize}
-
-                                                \item Tên người nộp thuế:   phải chứa một chuỗi kí tự tên    hợp lệ, không có số    và không được để trống.     %# Code
-                                                \item Người liên hệ: phải chứa một chuỗi kí tự tên    hợp lệ, không có số    và không được để trống.     %# Code
-                                                \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.   %# Code
-                                                \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.       %# Code
-                                                \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống.   %# Code
-
-                                          \end{itemize}
-                                    \end{vmatrix}
-
-                              \item Sau đó, người nộp thuế dùng chữ ký số để xác nhận gửi thay đổi với ngày thực hiện là ngày đang thay đổi thông tin.
-
-                                    $\Rightarrow$ \emph{Sau khi gửi thay đổi, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận thay đổi.}     %# Code "Gửi thông tin thay đổi hóa đơn điện tử cho cơ quan thuế thành công."
-
-                        \end{itemize}
-
-            \end{itemize}
-
-      \item Quản lý danh mục
-
-            \begin{itemize}
-
-                  \item Quản lý khách hàng
-
-                        Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với khách hàng có các thông tin:
-
-                        \begin{itemize}
-
-                              \item Mã
-
-                              \item Tên
-
-                              \item Mã số thuế
-
-                              \item Địa chỉ
-
-                              \item Số điện thoại
-
-                              \item Số tài khoản
-
-                              \item Ngân hàng
-
-                        \end{itemize}
-                        \begin{vmatrix}
+                        \item Để đăng ký, người nộp thuế cần chuẩn bị:
 
                               \begin{itemize}
 
-                                    \item Tên: phải chứa một chuỗi kí tự và không được để trống.    % # Code
+                                  \item Mã số thuế
 
-                                    \item Mã số thuế: có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".    % # Code
-
-                                    \item Địa chỉ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.   % # Code
-
-                                    \item Số điện thoại: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.   % # Code
-
-                                    \item Số tài khoản: phải chứa một chuỗi kí tự và không được để trống.       % # Code
-
-                                    \item Ngân hàng: phải chứa một chuỗi kí tự ngân hàng hợp lệ và không được để trống.   % # Code
+                                  \item Chữ ký số %# Code QR
 
                               \end{itemize}
-                        \end{vmatrix}
 
-
-                  \item Quản lý hàng hóa
-
-                        Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với hàng hóa có các thông tin:
-
-                        \begin{itemize}
-
-                              \item Mã
-
-                              \item Tên
-
-                              \item Đơn vị tính
-
-                              \item Đơn giá
-
-                              \item Thuế suất
-
-                              \item Ghi chú
-
-                        \end{itemize}
-                        \begin{vmatrix}
+                        \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm: %# Code file
 
                               \begin{itemize}
 
-                                    \item Tên    % # Code
+                                  \item Tên người nộp thuế
 
-                                    \item Đơn vị tính    % # Code
+                                  \item Mã cơ quan thuế
 
-                                    \item Đơn giá    % # Code
-
-                                    \item Thuế suất    % # Code
-
-                                    \item Ghi chú     % # Code
+                                  \item Tên cơ quan thuế
 
                               \end{itemize}
-                        \end{vmatrix}
 
+                              \begin{vmatrix}
 
-                  \item Quản lý ký hiệu hóa đơn
+                                  \begin{itemize}
 
-                        Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với ký hiệu hóa đơn có các thông tin:
+                                      \item Mã số thuế có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". %# Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng."
 
-                        \begin{itemize}
+                                            \begin{example}
 
-                              \item Loại hóa đơn
+                                                Mã số thuế 10 ký tự: 0123456789
 
-                              \item Ký hiệu hóa đơn
+                                                Mã số thuế 14 ký tự: 0123456789-001
 
-                        \end{itemize}
-                        \begin{vmatrix}
+                                            \end{example}
+
+                                      \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã đăng ký sử dụng hóa đơn điện tử." %# Code
+
+                                  \end{itemize}
+                              \end{vmatrix}
+
+                        \item Tiếp theo, người nộp thuế nhập các thông tin:
 
                               \begin{itemize}
 
-                                    \item Loại hóa đơn    % # Code
+                                  \item Người liên hệ
 
-                                    \item Ký hiệu hóa đơn     % # Code
+                                  \item Điện thoại liên hệ
+
+                                  \item Địa chỉ liên hệ
+
+                                  \item Thư điện tử
 
                               \end{itemize}
-                        \end{vmatrix}
 
+                              \begin{vmatrix}
 
-            \end{itemize}
+                                  \begin{itemize}
 
-      \item Quản lý hóa đơn
+                                      \item Người liên hệ: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+                                      \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. %# Code
+
+                                      \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. %# Code
+
+                                      \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống. %# Code
+
+                                  \end{itemize}
+                              \end{vmatrix}
+
+                        \item Người nộp thuế chọn hình thức hóa đơn: %# Code enum
+
+                              \begin{itemize}
+
+                                  \item Hóa đơn có mã của cơ quan thuế
+
+                                  \item Hóa đơn không có mã của cơ quan thuế
+
+                              \end{itemize}
+
+                        \item Người nộp thuế chọn loại hóa đơn: %# Code enum
+
+                              \begin{itemize}
+
+                                  \item Hóa đơn điện tử giá trị gia tăng
+
+                                  \item Hóa đơn bán hàng
+
+                                  \item Hóa đơn bán tài sản công
+
+                                  \item Hóa đơn bán hàng dự trữ quốc gia
+
+                                  \item Hóa đơn khác
+
+                              \end{itemize}
+
+                        \item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
+
+                              $\Rightarrow$ \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký.} %# Code "Gửi thông tin đăng ký hóa đơn điện tử cho cơ quan thuế thành công."
+
+                    \end{itemize}
+
+              \item Đăng nhập
+
+                    \begin{itemize}
+
+                        \item Trong thông báo chấp nhận đăng ký, người nộp thuế nhận được thông tin đăng nhập tài khoản của người quản trị bao gồm:
+
+                              \begin{itemize}
+
+                                  \item Tên đăng nhập
+
+                                  \item Mật khẩu
+
+                              \end{itemize}
+
+                        \item Người nộp thuế sử dụng thông tin đăng nhập để thực hiện đăng nhập.
+
+                              \begin{vmatrix}
+
+                                  \begin{itemize}
+
+                                      \item Nếu thông tin đăng nhập không chính xác, hệ thống sẽ thông báo: "Thông tin đăng nhập không chính xác." %# Code
+
+                                  \end{itemize}
+                              \end{vmatrix}
+
+                    \end{itemize}
+
+              \item Đăng xuất
+
+                    \begin{itemize}
+
+                        \item Chức năng đăng xuất tài khoản.
+
+                    \end{itemize}
+
+              \item Quên mật khẩu
+
+                    \begin{itemize}
+
+                        \item \emph{Chức năng quên mật khẩu chỉ áp dụng cho tài khoản của người quản trị.}
+
+                        \item Người nộp thuế cung cấp tên đăng nhập.
+
+                        \item Người nộp thuế dùng chữ ký số để gửi yêu cầu khôi phục mật khẩu.
+
+                              $\Rightarrow$ \emph{Sau khi gửi yêu cầu, người nộp thuế sẽ nhận được mật khẩu mới qua thư điện tử.} %# Code "Gửi yêu cầu khôi phục mật khẩu thành công."
+
+                    \end{itemize}
+
+              \item Đổi mật khẩu
+
+                    \begin{itemize}
+
+                        \item Để thay đổi mật khẩu cần cung cấp thông tin:
+
+                              \begin{itemize}
+
+                                  \item Mật khẩu cũ
+
+                                  \item Mật khẩu mới
+
+                                  \item Nhập lại mật khẩu mới
+
+                              \end{itemize}
+
+                              \begin{vmatrix}
+
+                                  \begin{itemize}
+
+                                      \item Mật khẩu: phải chứa một chuỗi có độ dài lớn hơn 8 kí tự và không được để trống. %# Code
+
+                                      \item Nếu mật khẩu cũ không chính xác, hệ thống sẽ thông báo: "Mật khẩu cũ không chính xác." %# Code
+
+                                      \item Nếu mật khẩu mới không trùng khớp, hệ thống sẽ thông báo: "Mật khẩu mới không trùng khớp." %# Code
+
+                                  \end{itemize}
+                              \end{vmatrix}
+
+                    \end{itemize}
+
+              \item Thay đổi thông tin
+
+                    \begin{itemize}
+
+                        \item Trong quá trình sử dụng hóa đơn điện tử, người nộp thuế có thể thay đổi thông tin:
+
+                              \begin{itemize}
+
+                                  \item Tên người nộp thuế
+
+                                  \item Người liên hệ
+
+                                  \item Điện thoại liên hệ
+
+                                  \item Địa chỉ liên hệ
+
+                                  \item Thư điện tử
+
+                              \end{itemize}
+
+                              \begin{vmatrix}
+
+                                  \begin{itemize}
+
+                                      \item Tên người nộp thuế: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+                                      \item Người liên hệ: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+
+                                      \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. %# Code
+
+                                      \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. %# Code
+
+                                      \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống. %# Code
+
+                                  \end{itemize}
+                              \end{vmatrix}
+
+                        \item Sau đó, người nộp thuế dùng chữ ký số để xác nhận gửi thay đổi với ngày thực hiện là ngày đang thay đổi thông tin.
+
+                              $\Rightarrow$ \emph{Sau khi gửi thay đổi, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận thay đổi.} %# Code "Gửi thông tin thay đổi hóa đơn điện tử cho cơ quan thuế thành công."
+
+                    \end{itemize}
+
+          \end{itemize}
+
+    \item Quản lý danh mục
+
+          \begin{itemize}
+
+              \item Quản lý khách hàng
+
+                    Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với khách hàng có các thông tin:
+
+                    \begin{itemize}
+
+                        \item Mã
+
+                        \item Tên
+
+                        \item Mã số thuế
+
+                        \item Địa chỉ
+
+                        \item Số điện thoại
+
+                        \item Số tài khoản
+
+                        \item Ngân hàng
+
+                    \end{itemize}
+
+                    \begin{vmatrix}
+
+                        \begin{itemize}
+
+                            \item Tên: phải chứa một chuỗi kí tự và không được để trống. % # Code
+
+                            \item Mã số thuế: có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". % # Code
+
+                            \item Địa chỉ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. % # Code
+
+                            \item Số điện thoại: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống. % # Code
+
+                            \item Số tài khoản: phải chứa một chuỗi kí tự và không được để trống. % # Code
+
+                            \item Ngân hàng: phải chứa một chuỗi kí tự ngân hàng hợp lệ và không được để trống. % # Code
+
+                        \end{itemize}
+                    \end{vmatrix}
+
+              \item Quản lý hàng hóa
+
+                    Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với hàng hóa có các thông tin:
+
+                    \begin{itemize}
+
+                        \item Mã
+
+                        \item Tên
+
+                        \item Đơn vị tính
+
+                        \item Đơn giá
+
+                        \item Thuế suất
+
+                        \item Ghi chú
+
+                    \end{itemize}
+
+                    \begin{vmatrix}
+
+                        \begin{itemize}
+
+                            \item Tên % # Code
+
+                            \item Đơn vị tính % # Code
+
+                            \item Đơn giá % # Code
+
+                            \item Thuế suất % # Code
+
+                            \item Ghi chú % # Code
+
+                        \end{itemize}
+                    \end{vmatrix}
+
+              \item Quản lý ký hiệu hóa đơn
+
+                    Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với ký hiệu hóa đơn có các thông tin:
+
+                    \begin{itemize}
+
+                        \item Loại hóa đơn
+
+                        \item Ký hiệu hóa đơn
+
+                    \end{itemize}
+
+                    \begin{vmatrix}
+
+                        \begin{itemize}
+
+                            \item Loại hóa đơn % # Code
+
+                            \item Ký hiệu hóa đơn % # Code
+
+                        \end{itemize}
+                    \end{vmatrix}
+
+          \end{itemize}
+
+    \item Quản lý hóa đơn
 
 \end{itemize}
 
