@@ -2,21 +2,21 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 \begin{itemize}
 
-    \item Quản lý tài khoản
+\item Quản lý tài khoản
 
-          \begin{itemize}
+      \begin{itemize}
 
-              \item Đăng ký
+            \item Đăng ký
 
-                    \begin{itemize}
+                  \begin{itemize}
 
                         \item Để thực hiện đăng ký, người nộp thuế cần chuẩn bị:
 
                               \begin{itemize}
 
-                                  \item Mã số thuế.
+                                    \item Mã số thuế.
 
-                                  \item Chữ ký số.
+                                    \item Chữ ký số.
 
                               \end{itemize}
 
@@ -28,59 +28,59 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \begin{vmatrix}
 
-                                  \begin{itemize}
+                                    \begin{itemize}
 
-                                      \item Mã số thuế có 10 ký tự cho cá nhân, doanh nghiệp hoặc 14 ký tự cho chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".
+                                          \item Mã số thuế có 10 ký tự cho cá nhân, doanh nghiệp hoặc 14 ký tự cho chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".
 
-                                            \begin{example}
+                                                \begin{example}
 
-                                                Mã số thuế 10 ký tự: 0123456789
+                                                      Mã số thuế 10 ký tự: 0123456789
 
-                                                Mã số thuế 14 ký tự: 0123456789-001
+                                                      Mã số thuế 14 ký tự: 0123456789-001
 
-                                            \end{example}
+                                                \end{example}
 
-                                            %# Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng".
+                                                %# Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng".
 
-                                      \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã đăng ký sử dụng hóa đơn điện tử."
+                                          \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã đăng ký sử dụng hóa đơn điện tử."
 
-                                            %# Code
+                                                %# Code
 
-                                  \end{itemize}
+                                    \end{itemize}
                               \end{vmatrix}
 
                         \item Tiếp theo, người nộp thuế nhập các thông tin: Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử.
 
                               \begin{vmatrix}
 
-                                  \begin{itemize}
+                                    \begin{itemize}
 
-                                      \item Người liên hệ: phải chứa một chuỗi kí tự và không được để trống.
+                                          \item Người liên hệ: phải chứa một chuỗi kí tự và không được để trống.
 
-                                            %# Code
+                                                %# Code
 
-                                      \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.
+                                          \item Điện thoại liên hệ: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.
 
-                                            %# Code
+                                                %# Code
 
-                                      \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.
+                                          \item Địa chỉ liên hệ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.
 
-                                            %# Code
+                                                %# Code
 
-                                      \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống.
+                                          \item Thư điện tử: phải chứa một chuỗi kí tự có định dạng email và không được để trống.
 
-                                            %# Code
+                                                %# Code
 
-                                  \end{itemize}
+                                    \end{itemize}
                               \end{vmatrix}
 
                         \item Người nộp thuế chọn hình thức hóa đơn:
 
                               \begin{itemize}
 
-                                  \item Có mã của cơ quan thuế.
+                                    \item Có mã của cơ quan thuế.
 
-                                  \item Không có mã của cơ quan thuế.
+                                    \item Không có mã của cơ quan thuế.
 
                               \end{itemize}
 
@@ -88,15 +88,15 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \begin{itemize}
 
-                                  \item Hóa đơn điện tử giá trị gia tăng
+                                    \item Hóa đơn điện tử giá trị gia tăng
 
-                                  \item Hóa đơn bán hàng
+                                    \item Hóa đơn bán hàng
 
-                                  \item Hóa đơn bán tài sản công
+                                    \item Hóa đơn bán tài sản công
 
-                                  \item Hóa đơn bán hàng dự trữ quốc gia
+                                    \item Hóa đơn bán hàng dự trữ quốc gia
 
-                                  \item Hóa đơn khác
+                                    \item Hóa đơn khác
 
                               \end{itemize}
 
@@ -104,258 +104,38 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               %# Code "Gửi thông tin đăng ký sử dụng hóa đơn điện tử cho cơ quan thuế thành công".
 
-                              
                               \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua gửi thư điện tử về việc tiếp nhận và chấp nhận đăng ký.}
 
-                    \end{itemize}
+                  \end{itemize}
 
-          \end{itemize}
+            \item Đăng nhập
+
+
+
+
+                  \begin{itemize}
+
+                        \item   Trong  thông báo của cơ quan thuế  về việc   chấp nhận đăng ký, người nộp thuế   nhận được  thông tin về tài khoản và mật khẩu cho:
+                              Sau khi CQT gửi mail tài khoản và mật khẩu cho NNT, NNT thực hiện truy cập
+                              trang https://hoadondientu.gdt.gov.vn, chọn “Đăng nhập”
+
+                              \begin{itemize}
+
+                                    \item   Tên đăng nhập
+
+                                    \item   Mật khẩu
+
+                              \end{itemize}
+                        \item  Để
+
+                  \end{itemize}
+
+
+      \end{itemize}
 
 \end{itemize}
 
-% \item Đăng nhập (Sign In)
 
-% Sau khi đăng ký, NNT sẽ nhận được thông báo của TCT qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký bao gồm thông tin: \emph{Tên đăng nhập (Username)} và \emph{Mật khẩu (Password)} để thực hiện việc đăng nhập.
-
-% \emph{xxxxxxxxxxxxx}
-
-% \end{itemize}
-
-% \item xxxxxxxxxx
-
-% \begin{itemize}
-
-% \item xxxxxxxxxx
-
-% \item xxxxxxxxxx
-
-% \end{itemize}
-
-% \end{itemize}
-
-% % % \textbf{Em đã bỏ qua hình thức hóa đơn}
-
-% % % Hóa đơn có mã của cơ quan thuế
-
-% % % Hóa đơn không có mã của cơ quan thuế
-
-% % % \textbf{Bỏ qua các loại hóa đơn khác nhau}
-
-% % % Hóa đơn điện tử giá trị gia tăng
-
-% % % Hóa đơn bán hàng
-
-% % % Hóa đơn bán tài sản công
-
-% % % Hóa đơn bán hàng dự trữ quốc gia
-
-% % % Hóa đơn khác
-
-% % % Phiếu xuất kho kiêm vận chuyển nội bộ
-
-% % % Phiếu xuất kho gửi bán hàng đại lý
-
-% % % \end{document}
-
-% % % \textbf{Bỏ qua phần ký số}
-
-% % % USB Token hay còn gọi là chữ ký số Token là một thiết bị mà mọi doanh nghiệp, tổ chức hiện nay đều cần phải có để thực hiện khai báo và nộp thuế điện tử, cũng như để giao dịch với khách hàng.
-
-% % % \textbf{Bỏ qua phần ký hiệu hóa đơn}
-
-% % % Vì mục đích của ký hiệu hóa đơn là nhóm 6 ký tự thể hiện thông tin về loại hóa đơn điện tử có mã hoặc không mã, năm lập hóa đơn, loại hóa đơn.
-
-% % % \textbf{Bỏ qua chức năng lập hóa đơn điều chỉnh}
-
-% % % E bỏ qua chức năng lập hóa đơn điều chỉnh và chỉ có chức năng lập hóa đơn thay thế.
-
-% % % \textbf{Bỏ qua chức năng phê duyệt hóa đơn}
-
-% % % \textbf{Bỏ qua định dạng file XML, PDF, HTML, EXCEL}
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % % Cả 2 cái này phj thuộc vào cái chi tiết sau?
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% % $\Rightarrow$ \textbf{Tóm lại, các chức năng tổng quan của bài toán phụ bao gồm:}
-
-% % \begin{itemize}
-
-% % \item \underline{{QUẢN LÝ TÀI KHOẢN}}
-
-% % \begin{itemize}
-
-% % \item Đăng ký (Sign Up)
-
-% % \item Đăng nhập (Sign In)
-
-% % \item Đăng xuất (Sign Out)
-
-% % \item Quên mật khẩu (Forgot Password)
-
-% % \item Đổi mật khẩu (Change Password)
-
-% % \item Thay đổi thông tin (Update Information)
-
-% % \end{itemize}
-
-% % \item \underline{{QUẢN LÝ HỆ THỐNG}}
-
-% % \begin{itemize}
-
-% % \item Quản lý vai trò (Role Management)
-
-% % \item Quản lý người dùng (User Management)
-
-% % \end{itemize}
-
-% % \item \underline{{QUẢN LÝ DANH MỤC}}
-
-% % \begin{itemize}
-
-% % \item Quản lý khách hàng (Customer Management)
-
-% % \item Quản lý sản phẩm (Product Management)
-
-% % \end{itemize}
-
-% % \item \underline{{QUẢN LÝ HÓA ĐƠN}}
-
-% % \begin{itemize}
-
-% % \item Thêm, thay thế, xóa hóa đơn
-
-% % \end{itemize}
-
-% % \item \underline{{TRA CỨU HÓA ĐƠN}}
-
-% % \begin{itemize}
-
-% % \item Tra cứu khi chưa đăng nhập
-
-% % \item Tra cứu khi đã đăng nhập
-
-% % \end{itemize}
-
-% % \item \underline{{GỬI PHẢN HỒI QUA THƯ ĐIỆN TỬ}}
-
-% % \begin{itemize}
-
-% % \item Gửi thông tin của TCT đến NNT
-
-% % \end{itemize}
-
-% % \end{itemize}
 
 % % \subsubsection{Chi tiết các chức năng của bài toán phụ}
 
@@ -530,6 +310,77 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 % % %!<! - - $ NNT nhận được thư điện tử của cơ quan thuế thông báo tiếp nhận tờ khai đăng ký thay đổi - - >
 
 % % %!<! - - $ NNT nhận được thư điện tử của cơ quan thuế chấp nhận/không chấp nhận đăng ký sử dụng HĐĐT - - >
+
+% % \end{itemize}
+
+% % \end{itemize}
+
+
+% % $\Rightarrow$ \textbf{Tóm lại, các chức năng tổng quan của bài toán phụ bao gồm:}
+
+% % \begin{itemize}
+
+% % \item \underline{{QUẢN LÝ TÀI KHOẢN}}
+
+% % \begin{itemize}
+
+% % \item Đăng ký (Sign Up)
+
+% % \item Đăng nhập (Sign In)
+
+% % \item Đăng xuất (Sign Out)
+
+% % \item Quên mật khẩu (Forgot Password)
+
+% % \item Đổi mật khẩu (Change Password)
+
+% % \item Thay đổi thông tin (Update Information)
+
+% % \end{itemize}
+
+% % \item \underline{{QUẢN LÝ HỆ THỐNG}}
+
+% % \begin{itemize}
+
+% % \item Quản lý vai trò (Role Management)
+
+% % \item Quản lý người dùng (User Management)
+
+% % \end{itemize}
+
+% % \item \underline{{QUẢN LÝ DANH MỤC}}
+
+% % \begin{itemize}
+
+% % \item Quản lý khách hàng (Customer Management)
+
+% % \item Quản lý sản phẩm (Product Management)
+
+% % \end{itemize}
+
+% % \item \underline{{QUẢN LÝ HÓA ĐƠN}}
+
+% % \begin{itemize}
+
+% % \item Thêm, thay thế, xóa hóa đơn
+
+% % \end{itemize}
+
+% % \item \underline{{TRA CỨU HÓA ĐƠN}}
+
+% % \begin{itemize}
+
+% % \item Tra cứu khi chưa đăng nhập
+
+% % \item Tra cứu khi đã đăng nhập
+
+% % \end{itemize}
+
+% % \item \underline{{GỬI PHẢN HỒI QUA THƯ ĐIỆN TỬ}}
+
+% % \begin{itemize}
+
+% % \item Gửi thông tin của TCT đến NNT
 
 % % \end{itemize}
 
