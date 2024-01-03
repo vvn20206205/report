@@ -156,10 +156,9 @@
 },
 {
 "tag": "#",
-"color": "#ff79b4",
+"color": "#FF0000",
 "strikethrough": false,
 "underline": true,
-// "backgroundColor":"#f81e11",
 "backgroundColor": "transparent",
 "bold": true,
 "italic": true
