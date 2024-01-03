@@ -380,40 +380,42 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
           \end{itemize}
 
     \item Tra cứu hóa đơn
+          \begin{itemize}
 
-          % % Người sử dụng có thể thực hiện tra cứu hóa đơn trên cổng thông tin điện tử theo 2 cách:
+              \item Tra cứu khi chưa đăng nhập
+                    \begin{itemize}
 
-          % % Cách 1: Tra cứu hóa đơn khi NNT chưa đăng nhập
+                        \item Tra cứu  hóa đơn
+                              \begin{itemize}
 
-          % % Cách 2: Tra cứu hóa đơn khi NNT đã đăng nhập
+                                  \item   Người tra cứu nhập thông tin: Mã  hóa đơn.
+
+
+                                        % % %!<! - - Kết quả: - - >
+
+                                        % % %!<! - - - Nếu hóa đơn điện tử không hợp lệ, hệ thống sẽ hiển thị thông báo: "Không tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm”. - - >
+
+                                        % % %!<! - - - Nếu hóa đơn điện tử hợp lệ, hệ thống sẽ hiển thị thông báo: "Tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm". - - >
+
+                                        % % %!<! - - - Nếu hóa đơn tìm kiếm là hóa đơn thay thế, bị thay thế hệ thống sẽ hiển thị thông tin bổ sung về hóa đơn liên quan: "Hóa đơn này là hóa đơn thay thế cho hóa đơn có ID: {{ID}}" hoặc "Hóa đơn này là hóa đơn bị thay thế của hóa đơn có ID: {{ID}}". - - >
+                              \end{itemize}
+                        \item Tra cứu  mã số thuế
+                              \begin{itemize}
+
+                                  \item       Người tra cứu nhập thông tin bao gồm: Mã số thuế.
+
+                                        % % %!<! - - Kết quả: - - >
+
+                                        % % %!<! - - - Nếu đã đăng kí, hệ thống sẽ hiển thị thông báo: “MST 0107001729 đã đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
+
+                                        % % %!<! - - - Nếu NNT chưa đăng kí hoặc đã đăng kí nhưng cơ quan thuế có thông báo về việc không được chấp nhận đăng kí sử dụng hóa đơn điện tử, hệ thống sẽ hiển thị thông báo: “MST 0107001728 chưa sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
+                              \end{itemize}
+                    \end{itemize}
+          \end{itemize}
 
 \end{itemize}
 
-% % \begin{itemize}
 
-% % \item Tra cứu khi chưa đăng nhập
-
-% % %!<! - - Tra cứu thông tin hóa đơn - - >
-
-% % Người tra cứu nhập thông tin bao gồm: Mã số thuế người bán, Số hóa đơn, Tổng tiền thuế, Tổng tiền thanh toán, Ngày lập hóa đơn.
-
-% % %!<! - - Kết quả: - - >
-
-% % %!<! - - - Nếu hóa đơn điện tử không hợp lệ, hệ thống sẽ hiển thị thông báo: "Không tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm”. - - >
-
-% % %!<! - - - Nếu hóa đơn điện tử hợp lệ, hệ thống sẽ hiển thị thông báo: "Tồn tại hóa đơn có thông tin trùng khớp với các thông tin tổ chức, cá nhân tìm kiếm". - - >
-
-% % %!<! - - - Nếu hóa đơn tìm kiếm là hóa đơn thay thế, bị thay thế hệ thống sẽ hiển thị thông tin bổ sung về hóa đơn liên quan: "Hóa đơn này là hóa đơn thay thế cho hóa đơn có ID: {{ID}}" hoặc "Hóa đơn này là hóa đơn bị thay thế của hóa đơn có ID: {{ID}}". - - >
-
-% % %!<! - - Tra cứu thông tin "Mã số thuế" - - >
-
-% % Người tra cứu nhập thông tin bao gồm: Mã số thuế.
-
-% % %!<! - - Kết quả: - - >
-
-% % %!<! - - - Nếu đã đăng kí, hệ thống sẽ hiển thị thông báo: “MST 0107001729 đã đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
-
-% % %!<! - - - Nếu NNT chưa đăng kí hoặc đã đăng kí nhưng cơ quan thuế có thông báo về việc không được chấp nhận đăng kí sử dụng hóa đơn điện tử, hệ thống sẽ hiển thị thông báo: “MST 0107001728 chưa sử dụng hóa đơn điện tử theo Nghị định 123/2020/NĐ - CP". - - >
 
 % % \item Tra cứu khi đã đăng nhập
 
