@@ -10,31 +10,20 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                     \begin{itemize}
 
-                        \item Có 2 cách gửi đăng ký:
-
-                              \begin{enumerate}
-
-                                  \item Sử dụng qua tổ chức cung cấp dịch vụ hóa đơn điện tử.
-
-                                  \item Sử dụng trên cổng thông tin điện tử của Tổng cục Thuế.
-
-                              \end{enumerate}
-
-                        \item Để thực hiện đăng ký, NNT cần chuẩn bị:
+                        \item Để thực hiện đăng ký, người nộp thuế   cần chuẩn bị:
 
                               \begin{itemize}
 
                                   \item Mã số thuế.
 
                                   \item Chữ ký số.
-
                               \end{itemize}
 
-                              % Code kiểm tra MST
 
-                              % Code QR
+                              %# Code QR
 
-                        \item NNT nhập mã số thuế để lấy thông tin thuế bao gồm: Tên của NNT, Mã cơ quan thuế và Tên cơ quan thuế.
+
+                        \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm: Tên   người nộp thuế, Mã  cơ quan thuế  và Tên  cơ quan thuế.
 
                               \begin{note} Cần kiểm tra điều kiện của mã số thuế:
 
@@ -49,12 +38,14 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                                 Mã số thuế 14 ký tự: 0123456789 - 001
 
                                             \end{example}
-
+\begin{vmatrix}
+    
+\end{vmatrix}
                                             % Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng". - - >
 
                                       \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã tồn tại đăng ký sử dụng hóa đơn điện tử."
 
-                                            % Code  
+                                            % Code
 
                                   \end{itemize}
 
@@ -62,7 +53,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \item Tiếp theo, NNT nhập các thông tin: Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử.
 
-                              \begin{note} Cần kiểm tra điều kiện của  các thông tin:
+                              \begin{note} Cần kiểm tra điều kiện của các thông tin:
 
                                   \begin{itemize}
 
@@ -86,36 +77,37 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \end{note}
 
-                              \item  NNT chọn hình thức hóa đơn:
-      
-                                    \begin{itemize}
-      
-                                        \item    Có mã của cơ quan thuế.
-      
-                                        \item    Không có mã của cơ quan thuế.
-      
-                                    \end{itemize}
+                        \item NNT chọn hình thức hóa đơn:
 
-                                    \item  NNT chọn  loại   hóa đơn:
-            
-                                          \begin{itemize}
-            
+                              \begin{itemize}
 
-                                                 \item         Hóa đơn điện tử giá trị gia tăng 
-                                                 \item         Hóa đơn bán hàng 
-                                                 \item         Hóa đơn bán tài sản công 
-                                                 \item         Hóa đơn bán hàng dự trữ quốc gia 
-                                                 \item         Hóa đơn khác 
-                                          
-                                                \end{itemize}
+                                  \item Có mã của cơ quan thuế.
 
+                                  \item Không có mã của cơ quan thuế.
 
-                        \item Cuối cùng,  NNT dùng Chữ ký số để xác nhận  gửi đăng ký với Ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
-                        % Code  "Gửi thông tin đăng ký sử dụng hóa đơn điện tử cho cơ quan thuế thành công". - - >
+                              \end{itemize}
 
-                        \item        Sau khi gửi     đăng kí  NNT sẽ nhận được thông báo     của CQT qua gửi thư điện tử về việc tiếp nhận và chấp nhận đăng ký.
+                        \item NNT chọn loại hóa đơn:
 
+                              \begin{itemize}
 
+                                  \item Hóa đơn điện tử giá trị gia tăng
+
+                                  \item Hóa đơn bán hàng
+
+                                  \item Hóa đơn bán tài sản công
+
+                                  \item Hóa đơn bán hàng dự trữ quốc gia
+
+                                  \item Hóa đơn khác
+
+                              \end{itemize}
+
+                        \item Cuối cùng, NNT dùng Chữ ký số để xác nhận gửi đăng ký với Ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
+
+                              % Code "Gửi thông tin đăng ký sử dụng hóa đơn điện tử cho cơ quan thuế thành công". - - >
+
+                        \item Sau khi gửi đăng kí NNT sẽ nhận được thông báo của CQT qua gửi thư điện tử về việc tiếp nhận và chấp nhận đăng ký.
 
                     \end{itemize}
 
