@@ -28,6 +28,7 @@ class MyFormat:
         contents = contents.replace('\n', '\n\n\n\n\n')
 
 
+        contents = contents.replace('baemin', ', ')
 
         while ' ,' in contents:
             contents = contents.replace(' ,', ',')
