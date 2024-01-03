@@ -17,10 +17,10 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Mã số thuế
 
                                   \item Chữ ký số
+
                                         %# Code QR
 
                               \end{itemize}
-
 
                         \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm:
 
@@ -31,9 +31,8 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Mã cơ quan thuế
 
                                   \item Tên cơ quan thuế
+
                                         %# Code file
-
-
 
                                         \begin{vmatrix}
 
@@ -57,6 +56,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                                             \end{itemize}
                                         \end{vmatrix}
+
                               \end{itemize}
 
                         \item Tiếp theo, người nộp thuế nhập các thông tin:
@@ -70,7 +70,6 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Địa chỉ liên hệ
 
                                   \item Thư điện tử
-
 
                                         \begin{vmatrix}
 
@@ -94,6 +93,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                                             \end{itemize}
                                         \end{vmatrix}
+
                               \end{itemize}
 
                         \item Người nộp thuế chọn hình thức hóa đơn:
@@ -105,6 +105,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Hóa đơn không có mã của cơ quan thuế
 
                                         %# Code enum
+
                               \end{itemize}
 
                         \item Người nộp thuế chọn loại hóa đơn:
@@ -122,12 +123,13 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Hóa đơn khác
 
                                         %# Code enum
+
                               \end{itemize}
 
                         \item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
 
-
                               $\Rightarrow$ \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký.}
+
                               %# Code "Gửi thông tin đăng ký hóa đơn điện tử cho cơ quan thuế thành công."
 
                     \end{itemize}
@@ -136,7 +138,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                     \begin{itemize}
 
-                        \item Trong thông báo   về việc chấp nhận đăng ký, người nộp thuế nhận được thông tin đăng nhập tài khoản của người quản trị bao gồm:
+                        \item Trong thông báo về việc chấp nhận đăng ký, người nộp thuế nhận được thông tin đăng nhập tài khoản của người quản trị bao gồm:
 
                               \begin{itemize}
 
@@ -182,8 +184,8 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                               $\Rightarrow$ \emph{Sau khi gửi yêu cầu, người nộp thuế sẽ nhận được mật khẩu mới qua thư điện tử.}
 
                               %# Code "Gửi yêu cầu khôi phục mật khẩu thành công."
-                    \end{itemize}
 
+                    \end{itemize}
 
               \item Đổi mật khẩu
 
@@ -206,13 +208,16 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                                 \item Nếu mật khẩu cũ không chính xác, hệ thống sẽ thông báo: "Mật khẩu cũ không chính xác."
 
                                                       %# Code
+
                                                 \item Nếu mật khẩu mới không trùng khớp, hệ thống sẽ thông báo: "Mật khẩu mới không trùng khớp."
 
                                                       %# Code
 
                                             \end{itemize}
                                         \end{vmatrix}
+
                               \end{itemize}
+
                     \end{itemize}
 
               \item Thay đổi thông tin
@@ -232,6 +237,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                   \item Địa chỉ liên hệ
 
                                   \item Thư điện tử
+
                                         \begin{vmatrix}
 
                                             \begin{itemize}
@@ -239,6 +245,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                                 \item Tên người nộp thuế: phải chứa một chuỗi kí tự và không được để trống.
 
                                                       %# Code
+
                                                 \item Người liên hệ: phải chứa một chuỗi kí tự và không được để trống.
 
                                                       %# Code
@@ -257,12 +264,13 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                                             \end{itemize}
                                         \end{vmatrix}
+
                               \end{itemize}
 
                         \item Sau đó, người nộp thuế dùng chữ ký số để xác nhận gửi thay đổi với ngày thực hiện là ngày đang thay đổi thông tin.
 
-
                               $\Rightarrow$ \emph{Sau khi gửi thay đổi, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận thay đổi.}
+
                               %# Code "Gửi thông tin thay đổi hóa đơn điện tử cho cơ quan thuế thành công."
 
                     \end{itemize}
@@ -270,7 +278,6 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
           \end{itemize}
 
     \item Quản lý danh mục
-
 
           \begin{itemize}
 
@@ -294,40 +301,37 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \item Ngân hàng
 
-
-
                               \begin{vmatrix}
-
 
                                   \begin{itemize}
 
+                                      \item Tên: phải chứa một chuỗi kí tự và không được để trống.
 
-                                      \item Tên:  phải chứa một chuỗi kí tự và không được để trống.
                                             % # Code
-
 
                                       \item Mã số thuế: có 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".
-                                            % # Code
 
+                                            % # Code
 
                                       \item Địa chỉ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống.
+
                                             % # Code
 
+                                      \item Số điện thoại: phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.
 
-                                      \item Số điện thoại:  phải chứa một chuỗi kí tự số và dấu "+" ở đầu (nếu có) và không được để trống.
                                             % # Code
 
+                                      \item Số tài khoản: phải chứa một chuỗi kí tự và không được để trống.
 
-                                      \item Số tài khoản:   phải chứa một chuỗi kí tự và không được để trống.
                                             % # Code
 
+                                      \item Ngân hàng: phải chứa một chuỗi kí tự ngân hàng hợp lệ và không được để trống.
 
-                                      \item Ngân hàng:  phải chứa một chuỗi kí tự   ngân hàng hợp lệ và không được để trống.
                                             % # Code
-
 
                                   \end{itemize}
                               \end{vmatrix}
+
                     \end{itemize}
 
               \item Quản lý hàng hóa
@@ -347,30 +351,34 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                         \item Thuế suất
 
                         \item Ghi chú
+
                               \begin{vmatrix}
+
                                   \begin{itemize}
 
-
                                       \item Tên
+
                                             % # Code
 
                                       \item Đơn vị tính
-                                            % # Code
 
+                                            % # Code
 
                                       \item Đơn giá
-                                            % # Code
 
+                                            % # Code
 
                                       \item Thuế suất
+
                                             % # Code
 
-
                                       \item Ghi chú
+
                                             % # Code
 
                                   \end{itemize}
                               \end{vmatrix}
+
                     \end{itemize}
 
               \item Quản lý ký hiệu hóa đơn
@@ -382,19 +390,22 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                         \item Loại hóa đơn
 
                         \item Ký hiệu hóa đơn
+
                               \begin{vmatrix}
+
                                   \begin{itemize}
 
                                       \item Loại hóa đơn
-                                            % # Code
 
+                                            % # Code
 
                                       \item Ký hiệu hóa đơn
-                                            % # Code
 
+                                            % # Code
 
                                   \end{itemize}
                               \end{vmatrix}
+
                     \end{itemize}
 
           \end{itemize}
