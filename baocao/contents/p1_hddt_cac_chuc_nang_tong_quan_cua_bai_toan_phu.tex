@@ -10,50 +10,49 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                     \begin{itemize}
 
-                        \item Để thực hiện đăng ký, người nộp thuế   cần chuẩn bị:
+                        \item Để thực hiện đăng ký, người nộp thuế cần chuẩn bị:
 
                               \begin{itemize}
 
                                   \item Mã số thuế.
 
                                   \item Chữ ký số.
-                              \end{itemize}
 
+                              \end{itemize}
 
                               %# Code QR
 
+                        \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm: Tên người nộp thuế, Mã cơ quan thuế và Tên cơ quan thuế.
 
-                        \item Người nộp thuế nhập mã số thuế để lấy thông tin thuế bao gồm: Tên   người nộp thuế, Mã  cơ quan thuế  và Tên  cơ quan thuế.
+                              \begin{vmatrix}
 
-                              \begin{note} Cần kiểm tra điều kiện của mã số thuế:
 
                                   \begin{itemize}
 
-                                      \item Mã số thuế có 10 ký tự cho cá nhân, doanh nghiệp hoặc 14 ký tự cho chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp - Mã chi nhánh".
+                                      \item Mã số thuế có 10 ký tự cho cá nhân, doanh nghiệp hoặc 14 ký tự cho chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh".
 
                                             \begin{example}
 
                                                 Mã số thuế 10 ký tự: 0123456789
 
-                                                Mã số thuế 14 ký tự: 0123456789 - 001
+                                                Mã số thuế 14 ký tự: 0123456789-001
 
                                             \end{example}
-\begin{vmatrix}
-    
-\end{vmatrix}
-                                            % Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng". - - >
+
+
+                                            %#   Code "Mã số thuế phải có độ dài 10 hoặc 14 ký tự và đúng định dạng". - - >
 
                                       \item Nếu mã số thuế đã tồn tại đăng ký, hệ thống sẽ thông báo: "Mã số thuế đã tồn tại đăng ký sử dụng hóa đơn điện tử."
 
-                                            % Code
+                                            %# Code  
 
                                   \end{itemize}
+                              \end{vmatrix}
 
-                              \end{note}
 
-                        \item Tiếp theo, NNT nhập các thông tin: Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử.
+                        \item Tiếp theo, người nộp thuế nhập các thông tin: Người liên hệ, Điện thoại liên hệ, Địa chỉ liên hệ, Thư điện tử.
 
-                              \begin{note} Cần kiểm tra điều kiện của các thông tin:
+                              \begin{vmatrix}
 
                                   \begin{itemize}
 
@@ -74,10 +73,9 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
                                             % Code
 
                                   \end{itemize}
+                              \end{vmatrix}
 
-                              \end{note}
-
-                        \item NNT chọn hình thức hóa đơn:
+                        \item Người nộp thuế chọn hình thức hóa đơn:
 
                               \begin{itemize}
 
@@ -87,7 +85,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \end{itemize}
 
-                        \item NNT chọn loại hóa đơn:
+                        \item Người nộp thuế chọn loại hóa đơn:
 
                               \begin{itemize}
 
@@ -103,12 +101,12 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \end{itemize}
 
-                        \item Cuối cùng, NNT dùng Chữ ký số để xác nhận gửi đăng ký với Ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
+                        \item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
 
                               % Code "Gửi thông tin đăng ký sử dụng hóa đơn điện tử cho cơ quan thuế thành công". - - >
 
-                        \item Sau khi gửi đăng kí NNT sẽ nhận được thông báo của CQT qua gửi thư điện tử về việc tiếp nhận và chấp nhận đăng ký.
-
+                      
+                        \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của         cơ quan thuế      qua gửi thư điện tử về việc tiếp nhận và chấp nhận đăng ký.}
                     \end{itemize}
 
           \end{itemize}
@@ -363,7 +361,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 % % \item Đăng nhập (Sign In)
 
-% % Sau khi CQT gửi thư điện tử chứa tài khoản và mật khẩu cho NNT, NNT thực hiện nhập đầy đủ thông tin bao gồm: Tên đăng nhập, Mật khẩu để thực hiện việc đăng nhập vào tài khoản.
+% % Sau khi         cơ quan thuế      gửi thư điện tử chứa tài khoản và mật khẩu cho NNT, NNT thực hiện nhập đầy đủ thông tin bao gồm: Tên đăng nhập, Mật khẩu để thực hiện việc đăng nhập vào tài khoản.
 
 % % \item Đăng xuất (Sign Out)
 
@@ -371,7 +369,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 % % \item Quên mật khẩu (Forgot Password)
 
-% % NNT cung cấp đầy đủ thông tin bao gồm: Tên đăng nhập, Thư điện tử. Sau đó, nhấn "Quên mật khẩu" để khôi phục mật khẩu. CQT gửi mật khẩu mới về email của NNT.
+% % NNT cung cấp đầy đủ thông tin bao gồm: Tên đăng nhập, Thư điện tử. Sau đó, nhấn "Quên mật khẩu" để khôi phục mật khẩu.         cơ quan thuế      gửi mật khẩu mới về email của NNT.
 
 % % \item Đổi mật khẩu (Change Password)
 
@@ -523,15 +521,15 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 % % %!<! - - - Gửi thông tin làm việc của TCT cho yêu cầu của NNT - - >
 
-% % %!<! - - $ NNT nhận được thư điện tử của CQT thông báo tiếp nhận tờ khai đăng ký - - >
+% % %!<! - - $ NNT nhận được thư điện tử của         cơ quan thuế      thông báo tiếp nhận tờ khai đăng ký - - >
 
-% % %!<! - - $ NNT nhận được thư điện tử của CQT chấp nhận/không chấp nhận đăng ký sử dụng HĐĐT - - >
+% % %!<! - - $ NNT nhận được thư điện tử của         cơ quan thuế      chấp nhận/không chấp nhận đăng ký sử dụng HĐĐT - - >
 
 % % %!<! - - $ NNT nhận được Thông báo tài khoản sử dụng tra cứu HĐĐT trên cổng thông tin điện tử của TCT - - >
 
-% % %!<! - - $ NNT nhận được thư điện tử của CQT thông báo tiếp nhận tờ khai đăng ký thay đổi - - >
+% % %!<! - - $ NNT nhận được thư điện tử của         cơ quan thuế      thông báo tiếp nhận tờ khai đăng ký thay đổi - - >
 
-% % %!<! - - $ NNT nhận được thư điện tử của CQT chấp nhận/không chấp nhận đăng ký sử dụng HĐĐT - - >
+% % %!<! - - $ NNT nhận được thư điện tử của         cơ quan thuế      chấp nhận/không chấp nhận đăng ký sử dụng HĐĐT - - >
 
 % % \end{itemize}
 
