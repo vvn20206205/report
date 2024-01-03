@@ -90,22 +90,7 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                               \end{itemize}
 
-                        \item Người nộp thuế chọn loại hóa đơn: %# Code enum
-
-                              \begin{itemize}
-
-                                  \item Hóa đơn điện tử giá trị gia tăng
-
-                                  \item Hóa đơn bán hàng
-
-                                  \item Hóa đơn bán tài sản công
-
-                                  \item Hóa đơn bán hàng dự trữ quốc gia
-
-                                  \item Hóa đơn khác
-
-                              \end{itemize}
-
+                       
                         \item Cuối cùng, người nộp thuế dùng chữ ký số để xác nhận gửi đăng ký với ngày thực hiện là ngày đang đăng ký hóa đơn điện tử.
 
                               $\Rightarrow$ \emph{Sau khi gửi đăng kí, người nộp thuế sẽ nhận được thông báo của cơ quan thuế qua thư điện tử về việc tiếp nhận và chấp nhận đăng ký.} %# Code "Gửi thông tin đăng ký hóa đơn điện tử cho cơ quan thuế thành công."
@@ -267,9 +252,9 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \begin{itemize}
 
-                            \item Tên:   phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
+                            \item Tên: phải chứa một chuỗi kí tự tên hợp lệ, không có số và không được để trống. %# Code
 
-                            \item Mã số thuế:   10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". % # Code
+                            \item Mã số thuế: 10 ký tự đại diện cá nhân, doanh nghiệp hoặc 14 ký tự đại diện chi nhánh của doanh nghiệp với định dạng "Mã số thuế doanh nghiệp-Mã chi nhánh". % # Code
 
                             \item Địa chỉ: phải chứa một chuỗi kí tự địa chỉ hợp lệ và không được để trống. % # Code
 
@@ -306,41 +291,16 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \begin{itemize}
 
-                            \item Tên % # Code
-
-                            \item Đơn vị tính % # Code
-
-                            \item Đơn giá % # Code
-
-                            \item Thuế suất % # Code
-
-                            \item Ghi chú % # Code
+                            \item Tên: phải chứa một chuỗi kí tự   và không được để trống. %# Code
+                            \item Đơn vị tính: phải chứa một chuỗi kí tự   và không được để trống. %# Code
+                            \item Đơn giá: phải có định dạng là số. %# Code
+                            \item Thuế suất: phải có định dạng là số. %# Code
+                            \item Ghi chú: nội dung không bắt buộc. %# Code
 
                         \end{itemize}
                     \end{vmatrix}
 
-              \item Quản lý ký hiệu hóa đơn
-
-                    Có chức năng tìm kiếm chi tiết, tìm kiếm tất cả, thêm, sửa, xóa đối với ký hiệu hóa đơn có các thông tin:
-
-                    \begin{itemize}
-
-                        \item Loại hóa đơn
-
-                        \item Ký hiệu hóa đơn
-
-                    \end{itemize}
-
-                    \begin{vmatrix}
-
-                        \begin{itemize}
-
-                            \item Loại hóa đơn % # Code
-
-                            \item Ký hiệu hóa đơn % # Code
-
-                        \end{itemize}
-                    \end{vmatrix}
+             
 
           \end{itemize}
 
