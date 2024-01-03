@@ -463,23 +463,21 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \begin{itemize}
 
-                            \item Tên vai trò:  là          %# Code
+                            \item Tên vai trò: phải chứa một chuỗi kí tự   và không được để trống. %# Code
 
                             \item Các quyền trong hệ thống bao gồm: %# Code
 
                                   \begin{itemize}
+                                      \item  Thay đổi thông tin người nộp thuế
 
-                                      \item xxxxxxxxxx
+                                      \item Quản lý khách hàng
+                                      \item Quản lý hàng hóa, dịch vụ
 
-                                      \item xxxxxxxxxx
 
-                                            % % % Thay đổi đăng ký sử dụng hóa đơn điện tử
-
-                                            % % % Quản lí danh mục
-
-                                            % % % Quản lí hóa đơn
-
-                                            % % % Tra cứu hóa đơn
+                                      \item Thêm hóa đơn
+                                      \item Sửa hóa đơn
+                                      \item Xóa hóa đơn
+                                      \item Tra cứu hóa đơn
 
                                   \end{itemize}
 
@@ -508,9 +506,11 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
                         \begin{itemize}
 
-                            \item Tên đăng nhập: phải chứa một chuỗi kí tự với định dạng "Mã số thuế.Tên đăng nhập"  và không được để trống. %# Code
+                            \item Tên đăng nhập: phải chứa một chuỗi kí tự với định dạng "Mã số thuế.Tên đăng nhập" và không được để trống. %# Code
+
                             \item Mật khẩu: phải chứa một chuỗi có độ dài lớn hơn 8 kí tự và không được để trống. %# Code
-                            \item   Vai trò: là vai trò được người quản trị đã tạo. %# Code
+
+                            \item Vai trò: là vai trò được người quản trị đã tạo. %# Code
 
                         \end{itemize}
                     \end{vmatrix}
@@ -521,4 +521,53 @@ Các chức năng tổng quan của bài toán phụ bao gồm:
 
 \end{itemize}
 
+
 $\Rightarrow$ \textbf{Tóm lại, các chức năng tổng quan của bài toán phụ bao gồm:}
+
+\begin{itemize}
+
+    \item Quản lý tài khoản
+          \begin{itemize}
+              \item Đăng ký
+              \item Đăng nhập
+              \item Đăng xuất
+              \item Quên mật khẩu
+              \item Đổi mật khẩu
+              \item Thay đổi thông tin
+          \end{itemize}
+
+    \item Quản lý danh mục
+          \begin{itemize}
+              \item Quản lý khách hàng
+              \item Quản lý hàng hóa, dịch vụ
+          \end{itemize}
+    \item Quản lý hóa đơn
+          \begin{itemize}
+              \item Thêm hóa đơn
+              \item Sửa hóa đơn
+              \item Xóa hóa đơn
+          \end{itemize}
+
+    \item Tra cứu hóa đơn
+          \begin{itemize}
+              \item Tra cứu khi chưa đăng nhập
+                    \begin{itemize}
+                        \item Tra cứu hóa đơn
+                        \item Tra cứu mã số thuế
+                    \end{itemize}
+              \item Tra cứu khi đã đăng nhập
+                    \begin{itemize}
+                        \item Tra cứu hóa đơn bán ra.
+                        \item Tra cứu hóa đơn  mua vào.
+                    \end{itemize}
+          \end{itemize}
+
+    \item Quản lý hệ thống
+          \begin{itemize}
+              \item Quản lý vai trò
+              \item Quản lý người dùng
+          \end{itemize}
+    \item Gửi thông tin làm việc của Tổng cục Thuế qua thư điện tử cho người nộp thuế.
+\end{itemize}
+
+
