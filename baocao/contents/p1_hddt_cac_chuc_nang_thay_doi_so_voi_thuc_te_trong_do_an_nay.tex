@@ -1,43 +1,35 @@
 Để đơn giản hóa bài toán, các chức năng trong đồ án này đã thay đổi so với bài toán thực tế như sau:
 
 \begin{itemize}
+    \item  Dùng   ứng dụng xác thực thay thế  chữ ký số
+          Trong thực tế,   chữ ký số    mọi doanh nghiệp, tổ chức hiện nay  sử dụng là  USB Token.
+          Trong đồ án này, em  thay thế bằng  ứng dụng xác thực   tạo mã theo thời gian tăng thêm tính bảo mật.
+    \item Bỏ qua   loại hóa đơn vì các hóa đơn có nội dung   tương tự:
 
-\item Chữ ký số là QR 2FA
+          \begin{itemize}
 
-% % % USB Token hay còn gọi là chữ ký số Token là một thiết bị mà mọi doanh nghiệp, tổ chức hiện nay đều cần phải có để thực hiện khai báo và nộp thuế điện tử, cũng như để giao dịch với khách hàng.
+              \item Hóa đơn điện tử giá trị gia tăng
 
-% Mật khẩu 1 lần
+              \item Hóa đơn bán hàng
 
-% 30 giây
+              \item Hóa đơn bán tài sản công
 
-% Bảo mật
+              \item Hóa đơn bán hàng dự trữ quốc gia
 
-\item Bỏ qua phần loại hóa đơn vì các hóa đơn có nội dung khá tương tự:
+              \item Hóa đơn khác \dots
 
-\begin{itemize}
+          \end{itemize}
 
-\item Hóa đơn điện tử giá trị gia tăng
+    \item Bỏ qua phần ký hiệu hóa đơn
 
-\item Hóa đơn bán hàng
+          % https://www.meinvoice.vn/tin-tuc/12961/mau-so-hoa-don-va-ky-hieu-hoa-don-dien-tu-nd123-tt78
 
-\item Hóa đơn bán tài sản công
+    \item Bỏ qua chức năng lập hóa đơn điều chỉnh
 
-\item Hóa đơn bán hàng dự trữ quốc gia
+          Trong đồ án này, em bỏ qua chức năng lập hóa đơn điều chỉnh và chỉ có chức năng lập hóa đơn thay thế (sửa hóa đơn).
 
-\item Hóa đơn khác \dots
+    \item Bỏ qua chức năng phê duyệt hóa đơn
 
-\end{itemize}
-
-\item Bỏ qua phần ký hiệu hóa đơn
-
-% https://www.meinvoice.vn/tin-tuc/12961/mau-so-hoa-don-va-ky-hieu-hoa-don-dien-tu-nd123-tt78
-
-\item Bỏ qua chức năng lập hóa đơn điều chỉnh
-
-Trong đồ án này, em bỏ qua chức năng lập hóa đơn điều chỉnh và chỉ có chức năng lập hóa đơn thay thế (sửa hóa đơn).
-
-\item Bỏ qua chức năng phê duyệt hóa đơn
-
-\item Bỏ qua định dạng tập tin hóa đơn (XML, PDF, HTML, EXCEL, \dots)
+    \item Bỏ qua định dạng tập tin hóa đơn (XML, PDF, HTML, EXCEL, \dots)
 
 \end{itemize}
