@@ -1148,6 +1148,119 @@
 
 \begin{figure}[H]
 \centering
+\includegraphics[scale = 1]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{100100100100}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.9]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{909090909090}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.8]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{808080808080}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.7]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{707070707070}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.6]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{606060606060}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.5]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{505050505050}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.4]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{404040404040}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.3]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{303030303030}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.2]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{202020202020}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.1]{pictures/_ngon_ngu_chung_duoc_su_dung_trong_toan_bo_he_thong/main.png}
+\caption{101010101010}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\centering
 \includegraphics[scale = 1]{pictures/_so_do_xac_dinh_mien_phu/main.drawio.png}
 \caption{100100100100}
 \end{figure}
@@ -1334,6 +1447,119 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale = 0.1]{pictures/_tong_quan_ve_cot_loi_cua_thiet_ke_huong_mien/main.drawio.png}
+\caption{101010101010}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 1]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{100100100100}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.9]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{909090909090}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.8]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{808080808080}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.7]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{707070707070}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.6]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{606060606060}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.5]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{505050505050}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.4]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{404040404040}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.3]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{303030303030}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.2]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
+\caption{202020202020}
+\end{figure}
+
+%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.1]{pictures/_vi_du_ve_jenkins_trong_cong_nghe_tich_hop_lien_tuc/main.png}
 \caption{101010101010}
 \end{figure}
 
