@@ -27,8 +27,8 @@ output = Convert.VarSnakeCase(input)
 # chapter="p0_"
 # chapter="p001_"
 # chapter="p1_hddt_"
-chapter="p2_msa_"
-# chapter="p3_ddd_"
+# chapter="p2_msa_"
+chapter="p3_ddd_"
 #####################
 # sao chép file
 ten_file_nguon  = os.path.join("../../../baocao/contents", f"_a.tex")
