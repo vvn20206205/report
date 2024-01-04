@@ -38,7 +38,7 @@ shutil.copy(ten_file_nguon, ten_file_dich)
 with open(ten_file_nguon, 'w') as file:
     file.write('')
 # return văn bản
-output = "\n\n\n\n\\input{contents/" +  f"{chapter}{output}" + "}\n\n\n\n\n\n\n\n\n\n\n\n" 
+output = "\n\\input{contents/" +  f"{chapter}{output}" + "}\n\n\n\n\n\n\n\n\n\n\n\n" 
 #####################
 # output += "% \\chapter{xxxxxxx}\n\n\n\n" 
 # output += "% \\section{xxxxxxx}\n\n\n\n" 
