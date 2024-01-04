@@ -1,21 +1,21 @@
 {
 "folders": [
-    {
-        "name": "report",
-        "path": ".."
-    },
-    {
-        "name": "baocao",
-        "path": "../baocao"
-    },
-    {
-        "name": "pictures",
-        "path": "../baocao/pictures"
-    },
-    {
-        "name": "_doan",
-        "path": "../baocao/temp/_doan"
-    }
+{
+"name": "report",
+"path": ".."
+},
+{
+"name": "baocao",
+"path": "../baocao"
+},
+{
+"name": "pictures",
+"path": "../baocao/pictures"
+},
+{
+"name": "_doan",
+"path": "../baocao/temp/_doan"
+}
 ],
 "settings": {
 "code-runner.executorMap": {
