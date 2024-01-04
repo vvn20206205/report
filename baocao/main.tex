@@ -86,37 +86,10 @@
 \input{contents/_a.tex}
 
 \subsection{Bối cảnh bị giới hạn (Bounded Context)}
+\subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
+\subsection{Bản đồ bối cảnh (Context Maps)}
 \end{document}
-\subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
-\subsection{Bản đồ bối cảnh (Context Maps)}
-\subsection{Bối cảnh bị giới hạn (Bounded Context)}
 
-% \input{contents/boi_canh_bi_gioi_han_bounded_context}
-
-\subsection{Mối quan hệ bối cảnh bị giới hạn (Bounded Context Relationships)}
-
-% \input{contents/moi_quan_he_boi_canh_bi_gioi_han_bounded_context_relationships}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Bản đồ bối cảnh (Context Maps)}
-
-% \input{contents/ban_do_boi_canh_context_maps}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Mô hình miền (Domain Models)}
-
-Để tạo một phần mềm tốt, chúng ta cần phải hiểu rõ về phần mềm đó. Trong thiết kế hướng miền để có thể hiểu miền nhanh, chúng ta cần tạo ra các mô hình miền. Mô hình miền (Domain Models) là kiến thức có tổ chức và có cấu trúc về miền phù hợp để giải quyết vấn đề kinh doanh. Mục tiêu của mô hình miền là cung cấp rõ ràng, ngắn gọn và chính xác về miền làm cơ sở để hệ thống giải quyết vấn đề kinh doanh.
-
-% \begin{example} Trong đồ án này, mô hình miền của em bao gồm các yêu cầu nghiệp vụ và các sơ đồ: UML Use Case Diagrams, UML Class Diagrams, \dots kĩ thuật ở phần sau
-
-% \end{example}
 
 % \section{Bối cảnh bị giới hạn (Bounded Context)}
 
@@ -190,135 +163,7 @@ Một miền cần chia đủ nhỏ để phù hợp với một nhóm cụ th�
 
 %!<! - - Hướng dẫn 5/10 - - >
 
-% \section{Ngôn ngữ chung (Ubiquitous Language)}
 
-Trong quá trình xây dựng mô hình miền, cần có trao đổi giữa người thiết kế hệ thống và chuyên gia miền để hiểu đúng về miền. Tuy nhiên, nhóm kinh doanh sử dụng ngôn ngữ kinh doanh và nhóm công nghệ có xu hướng sử dụng các thuật ngữ kỹ thuật trong giao tiếp của họ. Người phát triển phần mềm tập trung vào lớp, phương thức, thuật toán, trong khi chuyên gia miền thường sử dụng ngôn ngữ chuyên ngành của họ. Sự khác biệt về ngôn ngữ giữa các thành viên có thể dẫn đến những thách thức về giao tiếp. Ngoài ra, trong các lĩnh vực kinh doanh khác nhau, một thuật ngữ có thể được sử dụng trong nhiều miền, cùng với ý nghĩa khác nhau gây ra sự nhầm lẫn và hiểu sai cho các người phát triển phần mềm cũng như các chuyên gia miền .
-
-Thiết kế hướng miền đề xuất sử dụng ngôn ngữ chung để giải quyết những thách thức ngôn ngữ. \emph{Ngôn ngữ chung (Ubiquitous Language)} là một ngôn ngữ được cấu trúc xung quanh mô hình miền và được tất cả các thành viên trong nhóm sử dụng cho mọi hoạt động của nhóm với phần mềm. Ngôn ngữ chung được xác định bởi các từ vựng và có định nghĩa rõ ràng về ngữ cảnh sử dụng từ vựng.
-
-\subsubsection{Một số đặc điểm của ngôn ngữ chung}
-
-\begin{itemize}
-
-\item Ngôn ngữ chung được sử dụng bởi cả chuyên gia miền và chuyên gia công nghệ.
-
-\item Có nhiều ngôn ngữ chung trong một tổ chức được mỗi nhóm tạo và quản lý một cách độc lập.
-
-\item Việc tạo ra ngôn ngữ chung là một quá trình liên tục. Ngôn ngữ chung phát triển theo thời gian thông qua sự cộng tác giữa doanh nghiệp và các chuyên gia công nghệ.
-
-\item Các thành viên phải sử dụng ngôn ngữ chung cho công việc và trong toàn bộ hệ thống
-
-\end{itemize}
-
-\begin{figure}[H]
-
-\centering
-
-\includegraphics[scale = 0.6]{pictures/ngon_ngu_chung/main.png}
-
-\caption{Ngôn ngữ chung được sử dụng trong toàn bộ hệ thống}
-
-\end{figure}
-
-%@ Tích hợp liên tục
-
-%@ Tích hợp liên tục
-
-%@ Tích hợp liên tục
-
-%@ Tích hợp liên tục
-
-%@ Tích hợp liên tục
-
-%!<! - - @Tích hợp Liên tục (Continuous Integration) - - >
-
-Tích hợp Liên tục (Continuous Integration): là việc các thành viên trong nhóm phát triển tích hợp mã nguồn vào một hệ thống chung thường xuyên. Khi có mã nguồn mới việc tích hợp liên tục sẽ tự động kiểm thử và xây dựng giảm xung đột giữa các phiên bản mã nguồn khác nhau, giúp phát hiện và sửa lỗi sớm hơn.
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-CI/CD là viết tắt của hai khái niệm quan trọng trong quá trình phát triển phần mềm: Continuous Integration (CI) và Continuous Delivery (CD). Đây là một phương pháp giúp tự động hóa quy trình phát triển, kiểm thử, và triển khai ứng dụng, giúp tăng cường chất lượng phần mềm và giảm thời gian cũng như rủi ro trong quá trình phát triển.
-
-1. **Continuous Integration (CI - Tích hợp liên tục):**
-
-- **Mục tiêu:** Đảm bảo rằng mã nguồn mới được tích hợp vào mã nguồn chính (main codebase) một cách tự động và thường xuyên, giảm thời gian giữa việc viết mã và phát hành.
-
-- **Quy trình:** Mỗi khi một nhà phát triển hoàn thành một tính năng hoặc sửa lỗi, họ tích hợp mã của mình vào mã nguồn chính. Hệ thống CI sẽ tự động kiểm tra mã này bằng cách chạy các bài kiểm thử tự động để đảm bảo rằng nó không làm hỏng hệ thống.
-
-2. **Continuous Delivery (CD - Phân phối liên tục):**
-
-- **Mục tiêu:** Tự động hóa việc triển khai ứng dụng để có thể phân phối bản vá, tính năng hoặc cập nhật một cách nhanh chóng và đáng tin cậy.
-
-- **Quy trình:** Nếu quá trình CI thành công, mã nguồn sẽ được triển khai tự động lên môi trường thử nghiệm (staging environment). Nếu mọi thứ ổn, nó có thể được triển khai tự động lên môi trường sản phẩm (production environment).
-
-3. **Continuous Deployment (CD - Triển khai liên tục):**
-
-- **Khác biệt với Continuous Delivery:** Trong Continuous Deployment, nếu mọi thứ qua bài kiểm thử được tự động và thành công, mã nguồn sẽ tự động triển khai lên môi trường sản phẩm mà không cần sự can thiệp thủ công.
-
-- **Mục tiêu:** Tối ưu hóa quá trình triển khai, giảm thiểu sự chờ đợi và đảm bảo tính ổn định của hệ thống.
-
-4. **Các công cụ thường được sử dụng:**
-
-- **Jenkins, Travis CI, CircleCI:** Đối với CI.
-
-- **Docker, Kubernetes:** Đối với CD, đặc biệt là việc triển khai và quản lý containerized applications.
-
-- **Ansible, Puppet, Chef:** Công cụ tự động hóa cấu hình và triển khai.
-
-Tổng cộng, CI/CD giúp tăng cường khả năng linh hoạt, đảm bảo chất lượng mã nguồn, giảm rủi ro, và giảm thời gian giữa việc phát triển và triển khai sản phẩm.
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-% CD là gì
-
-Khi một bối cảnh giới hạn đã được xác định, chúng ta cần đảm bảo rằng nó luôn ở trạng thái mới và hoạt động tốt như kỳ vọng. Đáp ứng nhu cầu doanh nghiệp phát triển thay đổi liên tục và nhanh chóng.
-
-Khi cùng vận hành và phát triển xung đột có thể xảy ra ở cùng hoặc khác bối cảnh giới hạn.
-
-= > Vì vậy, cần sử dụng việc tích hợp liên tục tạo ra một quy trình tự động và liên tục từ việc tích hợp mã nguồn, kiểm thử tự động giúp tăng cường chất lượng phần mềm, giảm thời gian và rủi ro trong quá trình phát triển phần mềm.
-
-%!<! - - $VD: jenkins - - >
-
-%!<! - - unit test - - >
-
-%!<! - - test tích hợp - - >
-
-% vở
-
-% thời gian khác nhau
-
-% http://localhost nên không có CD
 
 % \section{Bản đồ bối cảnh (Context Maps)}
 
